@@ -3,24 +3,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>PR台本シート｜PR案件対応ガイド（試作版）</title>
+<title>PR台本シート｜PR案件対応ガイド v2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head><body>
-<div class="proto"><b>試作版（2026Q3データ版）</b>　内容・価格は検討中のたたき台です</div>
-<header class="site"><div class="hwrap"><a class="logo" href="index.html">PR案件対応ガイド<small>企業案件で選ばれる発信者になる</small></a><a class="back" href="../index.html">← 5サービス比較トップへ</a></div>
-<nav class="tabs"><a href="index.html">トップ</a><a href="ch1.html">01 PR案件の全体像と流れ</a><a href="ch2.html">02 単価の考え方</a><a href="ch3.html">03 受ける・断る・延期する</a><a href="ch4.html">04 PR台本の設計</a><a href="ch5.html">05 先方への台本提出と意図</a><a href="ch6.html">06 企業とのコミュニケーション</a><a href="ch7.html">07 表現の注意</a><a href="ch8.html">08 複数の収益の柱</a><a class="tool" href="calc.html">🛠 単価目安の簡易計算機</a><a class="tool" href="phrases.html">🛠 交渉・返信フレーズ集</a><a class="tool on" href="script.html">🛠 PR台本シート</a><a class="tool" href="checklist.html">🛠 受注前チェックリスト</a><a class="tool" href="cases.html">事例集</a></nav></header>
+<div class="proto"><b>試作版 v2（2026Q3 全期間データ版）</b>　内容は検討中のたたき台です</div>
+<header class="site"><div class="hwrap"><a class="logo" href="index.html">PR案件対応ガイド<small>PR初心者スタートパック</small></a><a class="back" href="../index.html">← 5サービス比較トップへ</a></div>
+<nav class="tabs"><a href="index.html">トップ</a><a href="ch1.html">01 PR案件の流れ</a><a href="ch2.html">02 受ける・断る・延期</a><a href="ch3.html">03 単価と交渉</a><a href="ch4.html">04 PR台本の設計</a><a href="ch5.html">05 提出・修正・やり取り</a><a href="ch6.html">06 表現の注意と収益の柱</a><a class="tool" href="calc.html">🛠 単価目安の計算機</a><a class="tool" href="phrases.html">🛠 フレーズ集</a><a class="tool on" href="script.html">🛠 PR台本シート</a><a class="tool" href="pitchdeck.html">🛠 営業資料</a><a class="tool" href="checklist.html">🛠 受注前チェック</a><a class="tool" href="cases.html">事例集</a></nav></header>
 <main class="wide">
 <div class="eyebrow">TOOL 03</div><h1>PR台本シート</h1>
-<p class="lead">左から順に入力すると、右側に台本メモと、先方に添える意図文が自動で作られます（入力内容は、このブラウザ内にだけ保存されます）。</p>
+<div class="say"><img src="../s5/img/shuri_smile.png" alt="" width="52" height="52"><div class="b">入力すると、台本メモと意図文が自動でできる。<small>入力はこのブラウザ内にだけ保存されます</small></div></div>
 <div style="display:grid;gap:18px;grid-template-columns:1fr" id="sheetgrid">
 <style>@media(min-width:900px){#sheetgrid{grid-template-columns:1fr 1fr!important}}</style>
 <div class="card" id="sheet">
 <h3 style="margin-top:0">① 企画の軸</h3><label>商品名</label><input type="text" data-f="product" placeholder="例：〇〇（商品名）"><label>誰に</label><input type="text" data-f="who" placeholder="例：毎日の食事づくりに疲れているママ"><label>何を伝える</label><input type="text" data-f="what" placeholder="例：頑張りすぎなくてもいい、という安心感"><label>推しポイント</label><textarea data-f="push" rows="2" placeholder="一番見せたい良さを1〜2つ"></textarea>
 <h3>② 商品理解</h3><label>数字・根拠</label><textarea data-f="fact" rows="2" placeholder="例：〇種類の野菜、〇mg など（出典を確認）"></textarea><label>普通との違い</label><textarea data-f="diff" rows="2" placeholder="他の商品と何が違うか"></textarea>
 <h3>③ 構成（結論→悩み→良さ→どうなれるか→商品名）</h3><label>冒頭：1秒で分かる言葉 <small>（否定や別のものとの比較は避ける）</small></label><input type="text" data-f="open" placeholder="結論をストレートに"><label>本当の悩み</label><input type="text" data-f="pain" placeholder="ママの声の代弁で共感"><label>商品の良さ</label><textarea data-f="good" rows="2" placeholder="ポンポン並べる。専門語は日常語に"></textarea><label>使うとどうなれるか</label><input type="text" data-f="after" placeholder="一言で"><label>商品名・CTA（1つだけ）</label><input type="text" data-f="cta" placeholder="例：ハイライトへ">
-<h3>④ 秒数まわり</h3><label>商品が初めて映る秒</label><input type="text" data-f="sec1" placeholder="例：3"><label>秒数の指定</label><input type="text" data-f="secreq" placeholder="例：30秒以上／なし"><label>アフレコを話して測った実測 <small>（頭で見積もらず、実際に話して測る）</small></label><input type="text" data-f="secreal" placeholder="例：32">
+<h3>④ 秒数まわり</h3><label>商品が初めて映る秒 <small>（10秒以内が目安）</small></label><input type="text" data-f="sec1" placeholder="例：3"><label>秒数の指定</label><input type="text" data-f="secreq" placeholder="例：30秒以上／なし"><label>アフレコを話して測った実測 <small>（頭で見積もらず、実際に話して測る）</small></label><input type="text" data-f="secreal" placeholder="例：32">
 <h3>⑤ 伏線と回収</h3><label>冒頭で張る伏線</label><input type="text" data-f="seed" placeholder="例：家族が絶賛した"><label>最後の回収</label><input type="text" data-f="pay" placeholder="例：みんなが気に入った">
 <h3>⑥ 先方に確認すること</h3><label>確認したい点</label><textarea data-f="ask" rows="3" placeholder="商品名を先に言う指示／NG表現／表記／薬機法など"></textarea>
 <button type="button" class="btn sm line" id="sheetclear" style="margin-top:14px">入力をクリア</button>
@@ -29,13 +29,5 @@
 <div class="card"><h3 style="margin-top:0">台本メモ（自動生成）</h3><textarea id="sheetout" rows="22" readonly style="min-height:320px"></textarea><button type="button" class="btn sm" data-copy="sheetout" style="margin-top:8px">コピー</button> <button type="button" class="btn sm line noprint" onclick="window.print()">印刷</button></div>
 <div class="card"><h3 style="margin-top:0">先方に添える意図文（自動生成）</h3><textarea id="msgout" rows="18" readonly style="min-height:260px"></textarea><button type="button" class="btn sm" data-copy="msgout" style="margin-top:8px">コピー</button></div>
 </div></div>
-<h2>台本づくりの4つの見直しポイント</h2>
-<ul>
-<li>商品が出るまでの秒数は、長すぎないか（企業は自社商品を映してほしい）。</li>
-<li>否定表現や、人によって受け取り方が分かれる言葉が、冒頭に入っていないか。</li>
-<li>冒頭で張った伏線を、最後に回収しているか。</li>
-<li>先方の指示（商品名の順番・表現・表記）を、事前に確認したか。</li>
-</ul>
-<p><a href="ch4.html">→ 第4章 PR台本の設計</a>　<a href="ch5.html">→ 第5章 先方への提出</a></p>
-<p class="disc">※ 本ガイドの目安・考え方は、しゅりがコミュニティ内で語った内容を整理したものです。相場や条件は案件・時期・企業で変わります。数字は「目安」「仮説」であり、収益を保証するものではありません。契約・法律・表記に関する最終確認は、契約書の原本、企業、専門家にお願いします。</p></main><footer class="site">PR案件対応ガイド（試作版・2026Q3データ版）／ 講師：しゅり・リードットのLoom添削データをもとに再構成／ 受講生の情報は匿名化しています<br>本ガイドは一般的な考え方の紹介であり、法的助言ではありません。<script src="app.js"></script></footer>
+<details class="more"><summary>もっと見る：台本の見直し4点</summary><div class="in"><ul><li>商品が出るまでの秒数は長すぎないか（10秒以内）。</li><li>冒頭にビフォーや、受け取り方が分かれる言葉がないか。</li><li>冒頭の伏線を最後に回収しているか。</li><li>先方の指示を事前に確認したか。</li></ul></div></details><p><a href="ch4.html">→ 第4章</a>　<a href="ch5.html">→ 第5章</a></p><p class="disc mini">※ 本ガイドの目安・考え方は、しゅりがコミュニティ内で語った内容を整理したものです。相場や条件は案件・時期・企業で変わります。数字は「しゅり流の目安・仮説」であり、収益を保証するものではありません。契約・法律・表記の最終確認は、契約書の原本・企業・専門家にお願いします。</p></main><footer class="site">PR案件対応ガイド（試作版 v2・2026Q3全期間データ版）／ しゅりの添削・講座内容をもとに再構成／ 事例は匿名化・一般化しています<br>本ガイドは一般的な考え方の紹介であり、法的助言ではありません。<script src="app.js"></script></footer>
 </body></html>

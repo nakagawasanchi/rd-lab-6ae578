@@ -1,5 +1,5 @@
 (function(){
-  var KEY='shuri_s2_read_v2026Q3';
+  var KEY='shuri_s2_read_v2';
   function load(){try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){return {}}}
   function save(o){try{localStorage.setItem(KEY,JSON.stringify(o))}catch(e){}}
   var st=load();
@@ -27,6 +27,20 @@
     var k='chk_'+location.pathname.split('/').pop()+'_'+i;
     c.checked=!!st[k];
     c.addEventListener('change',function(){if(c.checked)st[k]=1;else delete st[k];save(st)});
+  });
+  document.querySelectorAll('textarea.wk').forEach(function(t,i){
+    var k='wk_'+location.pathname.split('/').pop()+'_'+i;
+    if(st[k])t.value=st[k];
+    t.addEventListener('input',function(){if(t.value)st[k]=t.value;else delete st[k];save(st)});
+  });
+  document.querySelectorAll('button.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var box=b.closest(b.getAttribute('data-copy'))||b.parentNode,txt='';
+      var ta=box.querySelectorAll('textarea');
+      if(ta.length){ta.forEach(function(t,i){txt+=(i+1)+'. '+t.value+'\n'})}else{var p=box.querySelector('pre');txt=p?p.textContent:box.textContent}
+      function ok(){var o=b.textContent;b.textContent='コピーしました';setTimeout(function(){b.textContent=o},1500)}
+      if(navigator.clipboard)navigator.clipboard.writeText(txt).then(ok,function(){});else ok();
+    });
   });
   var tg=document.getElementById('menu');
   if(tg)tg.addEventListener('click',function(){document.body.classList.toggle('open')});

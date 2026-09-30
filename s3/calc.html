@@ -3,34 +3,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>単価目安の簡易計算機｜PR案件対応ガイド（試作版）</title>
+<title>単価目安の計算機｜PR案件対応ガイド v2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head><body>
-<div class="proto"><b>試作版（2026Q3データ版）</b>　内容・価格は検討中のたたき台です</div>
-<header class="site"><div class="hwrap"><a class="logo" href="index.html">PR案件対応ガイド<small>企業案件で選ばれる発信者になる</small></a><a class="back" href="../index.html">← 5サービス比較トップへ</a></div>
-<nav class="tabs"><a href="index.html">トップ</a><a href="ch1.html">01 PR案件の全体像と流れ</a><a href="ch2.html">02 単価の考え方</a><a href="ch3.html">03 受ける・断る・延期する</a><a href="ch4.html">04 PR台本の設計</a><a href="ch5.html">05 先方への台本提出と意図</a><a href="ch6.html">06 企業とのコミュニケーション</a><a href="ch7.html">07 表現の注意</a><a href="ch8.html">08 複数の収益の柱</a><a class="tool on" href="calc.html">🛠 単価目安の簡易計算機</a><a class="tool" href="phrases.html">🛠 交渉・返信フレーズ集</a><a class="tool" href="script.html">🛠 PR台本シート</a><a class="tool" href="checklist.html">🛠 受注前チェックリスト</a><a class="tool" href="cases.html">事例集</a></nav></header>
+<div class="proto"><b>試作版 v2（2026Q3 全期間データ版）</b>　内容は検討中のたたき台です</div>
+<header class="site"><div class="hwrap"><a class="logo" href="index.html">PR案件対応ガイド<small>PR初心者スタートパック</small></a><a class="back" href="../index.html">← 5サービス比較トップへ</a></div>
+<nav class="tabs"><a href="index.html">トップ</a><a href="ch1.html">01 PR案件の流れ</a><a href="ch2.html">02 受ける・断る・延期</a><a href="ch3.html">03 単価と交渉</a><a href="ch4.html">04 PR台本の設計</a><a href="ch5.html">05 提出・修正・やり取り</a><a href="ch6.html">06 表現の注意と収益の柱</a><a class="tool on" href="calc.html">🛠 単価目安の計算機</a><a class="tool" href="phrases.html">🛠 フレーズ集</a><a class="tool" href="script.html">🛠 PR台本シート</a><a class="tool" href="pitchdeck.html">🛠 営業資料</a><a class="tool" href="checklist.html">🛠 受注前チェック</a><a class="tool" href="cases.html">事例集</a></nav></header>
 <main>
-<div class="eyebrow">TOOL 01</div><h1>単価目安の簡易計算機</h1>
-<p class="lead">しゅり流の目安（フォロワー×1円など）で、交渉の出発点を確認するための計算機です。</p>
-<div class="callout warn"><span class="lb">目安</span><p><b>あくまで目安です。</b>実際の単価は、ジャンル・時期・企業・案件内容で変わります。この結果は、金額を保証・推奨するものではありません。</p></div>
+<div class="eyebrow">TOOL 01</div><h1>単価目安の計算機</h1><div class="say"><img src="../s5/img/shuri_smile.png" alt="" width="52" height="52"><div class="b">出発点をつかむための目安です。<small>しゅり流：フォロワー×1円／1再生4円</small></div></div><div class="callout warn"><span class="lb">目安</span><p>金額を保証・推奨するものではありません。ジャンル・時期・企業で変わります。</p></div>
 <div class="card" id="calc">
 <label for="fol">フォロワー数 <small>（必須）</small></label><input id="fol" type="number" inputmode="numeric" min="0" placeholder="例：30000">
-<label for="cnt">依頼の本数 <small>（セット提案の合計を見たいとき）</small></label><input id="cnt" type="number" inputmode="numeric" min="1" value="1">
-<label for="views">1本あたりの想定再生数 <small>（任意・1再生4円の参考用）</small></label><input id="views" type="number" inputmode="numeric" min="0" placeholder="例：10000">
-<label for="ask">先方の提示額（1本あたり・円） <small>（任意・目安と比べたいとき）</small></label><input id="ask" type="number" inputmode="numeric" min="0" placeholder="例：15000">
-<label for="floor">月の最低ライン（円） <small>（任意・必要な本数を見たいとき）</small></label><input id="floor" type="number" inputmode="numeric" min="0" placeholder="例：50000">
+<label for="cnt">依頼の本数</label><input id="cnt" type="number" inputmode="numeric" min="1" value="1">
+<label for="views">想定再生数 <small>（1再生4円の参考）</small></label><input id="views" type="number" inputmode="numeric" min="0" placeholder="例：10000">
+<label for="ask">先方の提示額 <small>（1本・円）</small></label><input id="ask" type="number" inputmode="numeric" min="0" placeholder="例：15000">
+<label for="orig">元のPR報酬 <small>（二次利用費を見たいとき・円）</small></label><input id="orig" type="number" inputmode="numeric" min="0" placeholder="例：30000">
+<label for="floor">月の最低ライン <small>（円）</small></label><input id="floor" type="number" inputmode="numeric" min="0" placeholder="例：50000">
 </div>
 <div class="res" id="calcout"></div>
-<h2>この計算の見方</h2>
-<ul>
-<li><b>フォロワー×1円</b>：しゅりが語った目安そのままです。</li>
-<li><b>実例から換算した参考帯（仮説）</b>：しゅりが挙げた例「3.8万人で3〜3.5万円」を、フォロワー数に対する比率（約0.79〜0.92倍）に直したものです。厳密な基準ではなく、<b>ざっくりした感覚を掴むための仮説</b>です。</li>
-<li><b>1再生4円</b>：「絶対ではない」と前置きされた考え方。固定報酬に成果報酬を足す提案の材料に。</li>
-<li><b>固定案件の相場感</b>：2〜2.5万人あたりから3〜5万円、という話。</li>
-<li><b>必要な本数</b>：最低ラインを、その単価で埋めるなら月何本か。本数が多いと、オリジナル投稿の時間が減ることに注意。</li>
-</ul>
-<p>数字を出したら、<a href="ch2.html">第2章（単価の考え方）</a>の付加価値・セット提案で、交渉の中身を組み立てます。</p>
-<p class="disc">※ 本ガイドの目安・考え方は、しゅりがコミュニティ内で語った内容を整理したものです。相場や条件は案件・時期・企業で変わります。数字は「目安」「仮説」であり、収益を保証するものではありません。契約・法律・表記に関する最終確認は、契約書の原本、企業、専門家にお願いします。</p></main><footer class="site">PR案件対応ガイド（試作版・2026Q3データ版）／ 講師：しゅり・リードットのLoom添削データをもとに再構成／ 受講生の情報は匿名化しています<br>本ガイドは一般的な考え方の紹介であり、法的助言ではありません。<script src="app.js"></script></footer>
+<details class="more"><summary>もっと見る：数字の見方</summary><div class="in"><ul><li><b>フォロワー×1円</b>：しゅりの目安。2万人前後から有償PR3万円〜。</li><li><b>5万人超</b>：提示額が変わる（上振れしやすい）帯。</li><li><b>1再生4円</b>：「絶対ではない」前置きつき。固定＋成果報酬の材料に。</li><li><b>二次利用</b>：元報酬の半分以下。通常3か月で1.5万円が目安。無期限は別。</li><li><b>必要な本数</b>：多いと、自分の投稿の時間が減る点に注意。</li></ul></div></details><p>交渉の中身は<a href="ch3.html">第3章</a>で。</p><p class="disc mini">※ 本ガイドの目安・考え方は、しゅりがコミュニティ内で語った内容を整理したものです。相場や条件は案件・時期・企業で変わります。数字は「しゅり流の目安・仮説」であり、収益を保証するものではありません。契約・法律・表記の最終確認は、契約書の原本・企業・専門家にお願いします。</p></main><footer class="site">PR案件対応ガイド（試作版 v2・2026Q3全期間データ版）／ しゅりの添削・講座内容をもとに再構成／ 事例は匿名化・一般化しています<br>本ガイドは一般的な考え方の紹介であり、法的助言ではありません。<script src="app.js"></script></footer>
 </body></html>

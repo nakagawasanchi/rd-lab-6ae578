@@ -145,9 +145,18 @@
       var b = document.createElement('b'); b.textContent = it.name;
       var s = document.createElement('span'); s.textContent = it.desc;
       tx.appendChild(b); tx.appendChild(s);
+      if (it.link) {
+        var lk = document.createElement('a'); lk.className = 'ilink'; lk.href = it.link;
+        lk.textContent = '型カードで見る ▶'; tx.appendChild(lk);
+      }
       row.appendChild(tx);
       list.appendChild(row);
     });
+    var old = box.querySelector('.ver'); if (old) old.remove();
+    if (data.ver) {
+      var v = document.createElement('div'); v.className = 'ver'; v.textContent = '（' + data.ver + '）';
+      list.appendChild(v);
+    }
     box.classList.remove('hidden');
   }
 

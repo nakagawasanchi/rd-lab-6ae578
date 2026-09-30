@@ -3,73 +3,113 @@
   --coral:#e2694f; --coral-l:#fdebe6; --gold:#c9974a; --cream:#faf6ef; --card:#fff; --line:#e4dccd;
   --ok:#2c7a5b; --ng:#c0432f;
 }
-*{box-sizing:border-box}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--ink);font-family:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;line-height:1.85;font-size:15.5px;-webkit-text-size-adjust:100%}
-h1,h2,h3{font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif;color:var(--green-d);line-height:1.45;margin:0 0 .6em}
-h1{font-size:1.75rem} h2{font-size:1.35rem;margin-top:2.4em;padding-bottom:.35em;border-bottom:2px solid var(--line)} h3{font-size:1.08rem;margin-top:1.6em}
-a{color:var(--green)} p{margin:.6em 0}
-.wrap{max-width:900px;margin:0 auto;padding:0 16px}
-.beta{background:var(--green-d);color:#fff;font-size:.78rem;text-align:center;padding:5px 8px;letter-spacing:.03em}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Zen Maru Gothic","Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;line-height:1.8;font-size:16px;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif;color:var(--green-d);line-height:1.45;margin:0 0 .5em}
+h1{font-size:1.6rem} h2{font-size:1.25rem} h3{font-size:1.05rem}
+a{color:var(--green)} p{margin:.5em 0}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+.beta{background:var(--green-d);color:#fff;font-size:.75rem;text-align:center;padding:5px 8px}
 .back{display:inline-block;font-size:.85rem;margin:12px 0 0;text-decoration:none}
 header.site{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
-header.site .wrap{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}
-header.site .brand{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;color:var(--green-d);text-decoration:none;white-space:nowrap;font-size:.95rem}
+header.site .wrap{display:flex;align-items:center;gap:10px;padding-top:6px;padding-bottom:6px}
+header.site .brand{font-weight:700;color:var(--green-d);text-decoration:none;white-space:nowrap;font-size:.9rem}
 nav.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1}
 nav.tabs::-webkit-scrollbar{display:none}
-nav.tabs a{white-space:nowrap;text-decoration:none;color:var(--sub);font-size:.82rem;padding:5px 10px;border-radius:999px}
-nav.tabs a.on,nav.tabs a:hover{background:var(--leaf);color:var(--green-d);font-weight:700}
-.hero{padding:34px 0 26px}
-.hero .kicker{color:var(--coral);font-weight:700;font-size:.85rem;letter-spacing:.08em}
-.hero p.lead{font-size:1.02rem;color:#3c4b46}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
-.grid{display:grid;gap:12px;grid-template-columns:1fr}
-@media(min-width:640px){.grid.c2{grid-template-columns:1fr 1fr}.grid.c3{grid-template-columns:1fr 1fr 1fr}}
-.tile{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;transition:.15s}
-.tile:hover{border-color:var(--green);transform:translateY(-2px)}
-.tile b{display:block;font-family:"Zen Maru Gothic",sans-serif;color:var(--green-d);font-size:1.02rem}
-.tile span{font-size:.85rem;color:var(--sub)}
-.note{background:var(--coral-l);border-left:4px solid var(--coral);padding:10px 14px;border-radius:0 10px 10px 0;font-size:.9rem;margin:14px 0}
-.tip{background:var(--leaf);border-left:4px solid var(--green);padding:10px 14px;border-radius:0 10px 10px 0;font-size:.9rem;margin:14px 0}
-.tag{display:inline-block;font-size:.72rem;padding:1px 9px;border-radius:999px;background:var(--leaf);color:var(--green-d);font-weight:700;margin-right:4px}
-.tag.c{background:var(--coral-l);color:var(--ng)} .tag.g{background:#f6ecd8;color:#8a6420}
-table{border-collapse:collapse;width:100%;font-size:.88rem;background:var(--card)}
-th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left}
-th{background:var(--leaf);color:var(--green-d);font-size:.82rem}
-.tw{overflow-x:auto;margin:12px 0;-webkit-overflow-scrolling:touch}
-.tw table{min-width:560px}
-ol.steps{list-style:none;counter-reset:s;padding:0;margin:0}
-ol.steps>li{counter-increment:s;position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px 58px;margin:12px 0}
-ol.steps>li::before{content:counter(s);position:absolute;left:14px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--green);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:"Zen Maru Gothic",sans-serif}
-ol.steps h3{margin:0 0 .3em;font-size:1.02rem}
-.pair{display:grid;gap:10px;grid-template-columns:1fr;margin:10px 0}
+nav.tabs a{white-space:nowrap;text-decoration:none;color:var(--sub);font-size:.8rem;padding:5px 10px;border-radius:999px}
+nav.tabs a.on{background:var(--leaf);color:var(--green-d);font-weight:700}
+.hero{padding:26px 0 8px}
+.kicker{color:var(--coral);font-weight:700;font-size:.8rem;letter-spacing:.08em}
+.lead{font-size:1rem;color:#3c4b46}
+/* 1画面1メッセージ */
+.screen{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px;margin:16px 0;text-align:center}
+.screen .ico{font-size:2rem;line-height:1;margin-bottom:6px}
+.screen h2{margin:0 0 .3em}
+.screen p{color:var(--sub);margin:.2em 0}
+.screen.hl{background:var(--leaf);border-color:#cfe5db}
+/* 会話 */
+.chat{margin:14px 0}
+.b{display:flex;gap:8px;align-items:flex-start;margin:10px 0}
+.b .av{width:38px;height:38px;border-radius:50%;background:var(--leaf) center/cover no-repeat;flex:none;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);font-size:.7rem;display:flex;align-items:center;justify-content:center;color:var(--green-d);font-weight:700}
+.b .av.s{background-image:url(../s5/img/shuri_smile.png);background-position:center 20%}
+.b .t{background:var(--card);border:1px solid var(--line);border-radius:4px 16px 16px 16px;padding:8px 13px;max-width:calc(100% - 50px);font-size:.95rem}
+.b.me{flex-direction:row-reverse}
+.b.me .t{background:var(--leaf);border-color:#cfe5db;border-radius:16px 4px 16px 16px}
+.b .who{display:block;font-size:.68rem;color:var(--sub);margin-bottom:1px}
+.b.ng .t{border-color:#efc4bb;background:var(--coral-l)}
+.b.ok .t{border-color:#cfe5db;background:var(--leaf)}
+/* カード */
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin:12px 0}
+.card h3{margin:0 0 .3em}
+.card ul{margin:.3em 0}
+.grid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.grid.c2{grid-template-columns:1fr 1fr}}
+.tile{display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.tile .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.tile b{display:block;color:var(--green-d);font-size:1rem;line-height:1.4}
+.tile span.d{font-size:.82rem;color:var(--sub);line-height:1.5}
+.tile.new .n{background:var(--coral)}
+.note{background:var(--coral-l);border-left:4px solid var(--coral);padding:8px 14px;border-radius:0 10px 10px 0;font-size:.88rem;margin:12px 0}
+.tip{background:var(--leaf);border-left:4px solid var(--green);padding:8px 14px;border-radius:0 10px 10px 0;font-size:.88rem;margin:12px 0}
+.tag{display:inline-block;font-size:.7rem;padding:1px 9px;border-radius:999px;background:var(--leaf);color:var(--green-d);font-weight:700;margin-right:4px}
+.tag.c{background:var(--coral-l);color:var(--ng)} .tag.g{background:#f6ecd8;color:#8a6420} .tag.new{background:var(--coral);color:#fff}
+.ver{font-size:.7rem;color:var(--sub);margin-left:4px;font-weight:400}
+/* 進行バー */
+.flowbar{display:flex;gap:4px;overflow-x:auto;padding:4px 0 8px;scrollbar-width:none}
+.flowbar::-webkit-scrollbar{display:none}
+.flowbar a{flex:none;text-decoration:none;font-size:.78rem;background:var(--leaf);color:var(--green-d);border-radius:999px;padding:3px 11px;font-weight:700}
+/* 型カード */
+.step{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px 12px 56px;margin:12px 0}
+.step .no{position:absolute;left:12px;top:12px;width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.step h3{margin:0 0 .2em}
+.step ul{padding-left:1.1em;margin:.3em 0}
+.step .ngline{font-size:.86rem;color:var(--ng);background:var(--coral-l);border-radius:8px;padding:4px 10px;margin-top:6px}
+.step .ngline::before{content:"NG　";font-weight:700}
+/* OK/NG */
+.pair{display:grid;gap:8px;grid-template-columns:1fr;margin:8px 0}
 @media(min-width:640px){.pair{grid-template-columns:1fr 1fr}}
-.ok,.ng{border-radius:12px;padding:10px 14px;font-size:.9rem;background:var(--card);border:1px solid var(--line)}
+.ok,.ng{border-radius:12px;padding:8px 13px;font-size:.9rem;background:var(--card);border:1px solid var(--line)}
 .ok{border-left:5px solid var(--ok)} .ng{border-left:5px solid var(--ng)}
-.ok::before{content:"OK";display:block;font-weight:700;color:var(--ok);font-size:.75rem}
-.ng::before{content:"NG";display:block;font-weight:700;color:var(--ng);font-size:.75rem}
-details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0;margin:12px 0}
-details>summary{cursor:pointer;padding:12px 16px;font-weight:700;color:var(--green-d);list-style:none}
+.ok::before{content:"OK";display:block;font-weight:700;color:var(--ok);font-size:.72rem}
+.ng::before{content:"NG";display:block;font-weight:700;color:var(--ng);font-size:.72rem}
+/* もっと見る */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:10px 0}
+details>summary{cursor:pointer;padding:11px 16px;font-weight:700;color:var(--green-d);list-style:none;font-size:.95rem}
 details>summary::-webkit-details-marker{display:none}
 details>summary::after{content:"＋";float:right;color:var(--coral)}
 details[open]>summary::after{content:"－"}
 details>.in{padding:0 16px 14px}
 details.model{border-color:var(--gold);background:#fffaf0}
-.case{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:22px 0}
-.case h3{margin-top:0}
-textarea{width:100%;min-height:120px;border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit;font-size:.92rem;background:#fffdf8}
-button,.btn{font:inherit;cursor:pointer;background:var(--green);color:#fff;border:0;border-radius:999px;padding:9px 20px;font-weight:700;font-size:.9rem}
-button.sub{background:var(--leaf);color:var(--green-d)}
-button:hover{opacity:.9}
-.chk label{display:block;padding:6px 0;font-size:.92rem;cursor:pointer}
-.lv{display:inline-block;min-width:2.6em;text-align:center;font-size:.72rem;font-weight:700;border-radius:6px;padding:1px 6px;margin-right:6px}
+table{border-collapse:collapse;width:100%;font-size:.86rem;background:var(--card)}
+th,td{border:1px solid var(--line);padding:6px 9px;vertical-align:top;text-align:left}
+th{background:var(--leaf);color:var(--green-d);font-size:.8rem}
+.lv{display:inline-block;min-width:3.4em;text-align:center;font-size:.7rem;font-weight:700;border-radius:6px;padding:1px 6px;margin-right:6px}
 .lv1{background:#f7d9d2;color:#8f2c1b}.lv2{background:#f6ecd8;color:#8a6420}.lv3{background:#d3ebdf;color:#1c5c43}
-pre.prompt{background:#1e2b28;color:#e9f3ef;padding:16px;border-radius:12px;overflow:auto;max-height:520px;font-size:.82rem;line-height:1.7;white-space:pre-wrap;word-break:break-word}
-.copybar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}
-footer{margin:60px 0 30px;padding-top:18px;border-top:1px solid var(--line);font-size:.8rem;color:var(--sub)}
+.lvrow{display:flex;gap:6px;align-items:flex-start;margin:6px 0;font-size:.9rem}
+.lvrow .lv{flex:none;margin-top:2px}
+/* ロールプレイ */
+.case{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:18px 0}
+.case h3{margin:.3em 0 .2em}
+.case .st{font-size:.92rem}
+.case .bf{font-size:.9rem;background:#faf3e3;border-radius:10px;padding:6px 12px;margin:8px 0}
+.case .bf b{color:#8a6420}
+.case .q{font-weight:700;font-size:.92rem;margin:8px 0 4px}
+textarea{width:100%;min-height:96px;border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit;font-size:.92rem;background:#fffdf8}
+button,.btn{font:inherit;cursor:pointer;background:var(--green);color:#fff;border:0;border-radius:999px;padding:8px 18px;font-weight:700;font-size:.88rem}
+.m3{display:grid;gap:6px;margin:6px 0}
+.m3>div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px 12px;font-size:.9rem}
+.m3>div>b{display:block;font-size:.72rem;color:var(--gold);letter-spacing:.05em}
 .prog{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0}
 .prog i{display:block;height:100%;background:var(--green);width:0;transition:.3s}
-.meta{font-size:.82rem;color:var(--sub)}
-.pill{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:2px 12px;font-size:.8rem;margin:2px 3px 2px 0}
-ul{padding-left:1.3em;margin:.5em 0} li{margin:.25em 0}
-.quote{border-left:4px solid var(--gold);padding:4px 14px;color:#4b3f27;background:#fffaf0;border-radius:0 8px 8px 0;font-size:.92rem;margin:10px 0}
+.meta{font-size:.8rem;color:var(--sub)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.chips a{font-size:.78rem;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--green-d)}
+.chips a.done{background:var(--leaf)}
+pre.prompt{background:#1e2b28;color:#e9f3ef;padding:14px;border-radius:12px;overflow:auto;max-height:420px;font-size:.78rem;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+pre.tpl{background:#f4efe3;padding:12px;border-radius:10px;font-size:.82rem;white-space:pre-wrap;word-break:break-word;font-family:inherit}
+.copybar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}
+.chk label{display:block;padding:5px 0;font-size:.92rem;cursor:pointer}
+ul{padding-left:1.2em;margin:.4em 0} li{margin:.2em 0}
+.next{display:block;text-align:center;margin:26px 0 0;text-decoration:none;background:var(--green);color:#fff;border-radius:999px;padding:12px;font-weight:700}
+footer{margin:40px 0 24px;padding-top:14px;border-top:1px solid var(--line);font-size:.75rem;color:var(--sub)}

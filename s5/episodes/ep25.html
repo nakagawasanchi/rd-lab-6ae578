@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>人気の要素を混ぜたのに、微妙…｜宿屋しゅりの冒険者育成</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="ep" data-root="../" data-ep="ep25">
+<div class="ep-wrap">
+  <header class="ep-head">
+    <a class="back" href="../map.html#forest">◀ マップ</a>
+    <span class="place" id="place"></span>
+    <div class="ep-bar"><i id="bar"></i></div>
+  </header>
+  <main class="stage" id="stage">
+    <div class="chip" id="chip"></div>
+    <div class="portrait hero" id="p-hero"><img alt=""><span class="ph">🧑</span></div>
+    <div class="portrait shuri" id="p-shuri"><img alt=""><span class="ph">👩</span></div>
+  </main>
+  <section class="win dialog" id="dialog" aria-live="polite">
+    <span class="name n" id="name"></span>
+    <button type="button" class="prev" id="prev">◀ もどる</button>
+    <p id="text"></p>
+    <div class="choices hidden" id="choices"></div>
+    <span class="next" id="next">▼</span>
+  </section>
+  <section class="win items hidden" id="items">
+    <h2>✦ 持ち帰りアイテム ✦</h2>
+    <div id="itemlist"></div>
+    <button type="button" class="btn" id="restbtn">▶ 宿で休む</button>
+  </section>
+</div>
+<div class="lu hidden" id="lu">
+  <div class="zz" id="zz"><span class="z">Z</span><span class="z">z</span><span class="z">z</span>… ぐっすり…</div>
+  <div class="stage2" id="lu-stage">
+    <div class="glow"></div>
+    <div class="stars" id="stars"></div>
+    <div class="badge"><img id="lu-badge-img" alt=""></div>
+    <h2 id="lu-h">LEVEL UP!</h2>
+    <div class="lvline" id="lu-line">Lv.<span class="old" id="lu-old">1</span><span class="arrow">→</span><span class="new" id="lu-new">2</span></div>
+    <div class="rankline" id="lu-rank"></div>
+    <div class="learned"><small id="lu-learned-s">新しいスキルを覚えた！</small><b id="lu-skill"></b></div>
+    <div class="cleared" id="lu-clear"></div>
+    <div class="actions" id="lu-actions"></div>
+  </div>
+</div>
+<script id="ep-data" type="application/json">{"lines": [{"w": "n", "f": "", "t": "冒険者さんが、いろんな動画の切れ端を抱えてうなだれている。"}, {"w": "s", "f": "", "t": "おかえり。ずいぶんいろいろ集めてきたんだね。"}, {"w": "h", "f": "", "t": "バズった要素を3つ混ぜたのに、ぜんぜん響かなくて…"}, {"w": "h", "f": "sad", "t": "掛け合わせって、難しいね…"}, {"w": "s", "f": "", "t": "うんうん。それね、掛け合わせじゃなくて「寄せ集め」になってたのかも。"}, {"w": "?", "f": "", "t": ""}, {"w": "s", "f": "", "t": "大事なのは「距離」。ぜんぜん遠い別物を持ってくるの。"}, {"w": "h", "f": "", "t": "遠い別物…？"}, {"w": "s", "f": "", "t": "たとえば、取扱説明書のQRコードを、レシピのQRコードに変える、とかね。"}, {"w": "s", "f": "", "t": "似たものを混ぜても、二番煎じに見えちゃう。遠いほど「その手が！」になるよ。"}, {"w": "h", "f": "", "t": "ep1の「意外性の距離」と同じだ！"}, {"w": "s", "f": "", "t": "そう、つながったね。作る前に「これ、遠い？」って自分に聞いてみて。"}, {"w": "h", "f": "happy", "t": "寄せ集めはやめて、遠い別物を探してくる！"}, {"w": "s", "f": "smile", "t": "いい目になったね。家の中に、まだ眠ってるよ。"}], "items": [{"name": "寄せ集めはNG", "desc": "人気要素を混ぜても掛け合わせにならない", "link": "../../s1/cards.html"}, {"name": "距離チェック", "desc": "作る前に「これ、遠い？」と自分に聞く"}], "ver": "2026/05〜06の助言", "choice": [{"label": "うん、聞いてほしい…", "reply": []}, {"label": "ちょっとだけ泣いていい？", "reply": [{"w": "s", "f": "smile", "t": "いいよいいよ、おいで。……ぎゅー。はい、充電完了！"}]}]}</script>
+<script src="../js/data.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/episode.js"></script>
+</body>
+</html>

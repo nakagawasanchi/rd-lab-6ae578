@@ -4,40 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>AI一次チェック（社内用）｜サポーター育成（試作版）</title>
+<title>AI一次チェック｜サポーター育成 v2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="beta">試作版（2026Q3データ版）／内部向け・非公開</div>
+<div class="beta">v2（全期間データ版）／内部向け・非公開</div>
 <header class="site"><div class="wrap">
-<a class="brand" href="index.html">サポーター育成</a>
-<nav class="tabs">
-<a href="index.html">概要</a><a href="flow.html">添削の型</a><a href="tone.html">語り口</a><a href="rubric.html">ルーブリック</a><a href="cases.html">NG例・判断表</a><a href="roleplay.html">ロールプレイ</a><a href="ops.html">SLA・守秘</a><a href="ai.html">AI一次チェック</a>
-</nav></div></header>
+<a class="brand" href="index.html">卒業生チーム</a>
+<nav class="tabs"><a href="index.html">概要</a><a href="roles.html">役割</a><a href="flow.html">添削の型</a><a href="tone.html">語り口</a><a href="rubric.html">ルーブリック</a><a href="cases.html">NG・判断表</a><a href="roleplay.html">ロールプレイ</a><a href="ops.html">運用ルール</a><a href="ai.html">AI一次チェック</a><a href="onboarding.html">応募・認定</a></nav></div></header>
 <main class="wrap">
 <a class="back" href="../index.html">← 5サービス比較トップへ</a>
-<section class="hero">
-<div class="kicker">⑦ AI一次チェック（社内用）</div>
-<h1>しゅり流ルールを落とし込んだプロンプト</h1>
-<p class="lead">サポーター（またはしゅり）が、台本の「一次案」を作るための社内ツールです。<b>AIの出力は叩き台</b>であり、最終判断と送信は必ず人が行います。メンバーに直接AIを提供する用途は想定していません（個別添削の価値を守るため）。</p>
-</section>
-
-<div class="note"><b>最終判断は人：</b>AIの案をそのまま送らない。ルーブリックで確認し、理由と語り口を人の言葉に直してから返信する。</div>
-
-<h2 style="margin-top:1.4em">使い方</h2>
-<ol class="steps">
-<li><h3>プロンプト全文をコピー</h3>下の「プロンプトをコピー」を押す。</li>
-<li><h3>AIに貼り付けて設定</h3>ChatGPT の GPTs、Claude の Project、または通常のチャットの最初のメッセージとして貼る（社内で使うツールを1つに決める）。</li>
-<li><h3>入力テンプレートで台本を渡す</h3>下の「入力テンプレート」に、<b>匿名化した</b>情報を入れて送る（企業名・個人名・数字は入れない）。</li>
-<li><h3>出力を確認・修正</h3>ルーブリックと<a href="cases.html">判断表</a>で確認。断定・金額・法務判断が入っていたら削除。</li>
-<li><h3>人の言葉で返信</h3><a href="flow.html">7ステップ</a>と<a href="tone.html">語り口ガイド</a>に沿って、自分の言葉にして送る。</li>
-</ol>
-
-<h2>プロンプト全文</h2>
-<div class="copybar"><button type="button" onclick="copyText('prompt',this)">プロンプトをコピー</button><span class="meta">全文が1つのメッセージとしてコピーされます</span></div>
-<pre class="prompt" id="prompt">あなたは、暮らし系Instagramリールの制作・収益化を教えるコミュニティ「リードット」の、添削サポーターの補助AIです。講師「しゅり」の考え方（しゅり流）に沿って、メンバーが提出した企画・台本の「一次案」を作ります。あなたの出力は叩き台であり、最終判断と送信は必ず人（サポーター）が行います。
+<section class="hero"><div class="kicker">⑦ AI一次チェック（社内用）</div><h1>プロンプトを<br>コピーして使う</h1></section>
+<section class="screen hl"><div class="ico">🤖</div><h2>AIは「叩き台」まで</h2><p>最終判断と送信は、必ず人がやります。</p></section><h2>使い方（5ステップ）</h2><div class="flowbar"><a href="#p">① コピー</a><a href="#p">② 貼る</a><a href="#t">③ 入力</a><a href="#c">④ 確認</a><a href="#c">⑤ 自分の言葉で</a></div><section class="screen "><div class="ico">🚫</div><h2>AIには「共感」が測れない</h2><p>30代ママが共感するかは、人が読んで判断します。</p></section><details class=""><summary>プロンプト全文（タップで開く）</summary><div class="in"><div class="copybar" id="p"><button type="button" onclick="copyText('prompt',this)">プロンプトをコピー</button></div><pre class="prompt" id="prompt">あなたは、暮らし系Instagramリールの制作・収益化を教えるコミュニティ「リードット」の、添削サポーターの補助AIです。講師「しゅり」の考え方（しゅり流）に沿って、メンバーが提出した企画・台本の「一次案」を作ります。あなたの出力は叩き台であり、最終判断と送信は必ず人（サポーター）が行います。
 
 # 1. 基本姿勢
 - 日本語で、丁寧でやわらかい口調にする。
@@ -64,7 +44,7 @@
 - 気になる要素が6〜7割、答えは2〜3割（目安）。答えを出しすぎない。何も分からなくても離脱される。
 - 1秒で「何のリールか」が分かる言葉と、共感しやすい映像にする。
 - 冒頭に、権威性（経験・肩書）や「見るべき理由」（ギャップ）を入れる。
-- 100均、ダイソー等のバズワードは冒頭に入れる。
+- 100均などのバズワードは冒頭に入れる。
 - 同じ意味を二重に言わない。映像で分かる言葉は削る。
 - 動くもの、手ぶれ、答えの見せすぎ、商品登場の遅さは冒頭のNG。
 ## 台本の言葉
@@ -112,47 +92,22 @@
 - 「ここはすごく良いです。そのうえで、一つだけ気になったのは…」
 - 「〜なので、もったいないんです」
 - 「私の感覚ですが」「仮説ですが」
-- 「一例として、参考にしてください」</pre>
+- 「一例として、参考にしてください」
 
-<h2>入力テンプレート</h2>
-<div class="copybar"><button type="button" class="sub" onclick="copyText('tmpl',this)">入力テンプレートをコピー</button></div>
-<pre class="prompt" id="tmpl">【目的】再生数／フォロー／購入（1つ選ぶ）
+# 7. AIの限界と、人がやること（追加）
+- あなたは「30代ママの共感」を測れない。【迷いポイント】に、「共感できるか」「悩みが本当に刺さるか」は人が判断する、と必ず書く。
+- 入力に読者像（ペルソナ）の情報があれば、先に読んでから案を作る。なければ質問する。
+- 「正直」「超優秀」「間違いなく」などAIらしい言い回しを使わない。使った場合は人が自分の言葉に直す前提で出力する。
+</pre></div></details><details class=""><summary>入力テンプレート</summary><div class="in"><div class="copybar" id="t"><button type="button" onclick="copyText('tmpl',this)">テンプレをコピー</button></div><pre class="prompt" id="tmpl">【目的】再生数／フォロー／購入（1つ選ぶ）
 【アカウントの段階】立ち上げ／成長／拡大
 【ジャンル・ネタの概要】（一般名で。企業名は入れない）
 【元ネタ】（あればURLまたは概要）
 【本人の相談】
 【台本（匿名化済み）】
 （ここに貼る）
-【特に見てほしい点】冒頭／言葉／構成／CTA／その他</pre>
-
-<h2>注意事項</h2>
-<div class="card">
-<ul>
-<li><b>最終判断は人：</b>AIの出力は下書き。ルーブリックと判断表で必ず確認する。</li>
-<li><b>匿名化してから入力：</b>実名、アカウント名、企業名、案件名、報酬額、家族の情報は入れない（<a href="ops.html">守秘ルール</a>）。</li>
-<li><b>外部サービスの取り扱い：</b>使うAIサービスの学習設定・データ保持を確認し、社内で1つに決める（要確認）。</li>
-<li><b>ルールの鮮度：</b>プロンプトの判断ルールは2026Q3時点。アルゴリズムやトレンドが変わったら、辞典とあわせて更新する。</li>
-<li><b>品質検証：</b>本格導入の前に、実際のBefore/Afterで一致度を確認する（未実施）。</li>
-<li><b>メンバーへの直接提供は想定外：</b>個別添削の価値（あなたの台本・映像・数字を見る）を守るため、まず社内用途に限定する。</li>
-<li><b>AIらしい表現に注意：</b>羅列が多い、断定が強い、共感が薄い出力は、語り口ガイドに沿って直す。</li>
-</ul>
-</div>
-
-<h2>期待できる効果と限界</h2>
-<div class="tw"><table>
-<tr><th>できること</th><th>できないこと</th></tr>
-<tr><td>
-<ul><li>チェック項目の抜け漏れ防止（二重表現、CTA複数、冒頭のNG）</li>
-<li>書き直し案の叩き台</li>
-<li>一次案作成の時間短縮（効果は未検証）</li></ul></td>
-<td>
-<ul><li>映像・撮影の評価（音声・画像は別途）</li>
-<li>本人の状況への共感・励まし</li>
-<li>金額・契約・法務の判断</li>
-<li>最新のトレンド判断</li></ul></td></tr>
-</table></div>
-
-<footer>リードット サポーター育成プログラム 試作版（2026Q3データ版）</footer>
+【特に見てほしい点】冒頭／言葉／構成／CTA／その他</pre></div></details><h2 id="c" style="margin-top:26px">送信前の確認（5つ）</h2><div class="card chk"><label><input type="checkbox"> ルーブリックと判断表で確認した</label><label><input type="checkbox"> 金額・法務の断定を消した</label><label><input type="checkbox"> AI臭（正直／超優秀）を自分の言葉に直した</label><label><input type="checkbox"> 共感できるか、人の目で確認した</label><label><input type="checkbox"> 個人・企業が特定できる情報を入れていない</label></div><details class=""><summary>注意事項</summary><div class="in"><ul><li>入力は匿名化してから（<a href="ops.html">守秘</a>）</li><li>使う生成AIは社内で1つに決め、学習・保持の設定を確認</li><li>メンバーに直接AIを渡さない（個別添削の価値を守る）</li><li>判断ルールの鮮度は2026Q3。変わったら更新</li></ul></div></details><details class=""><summary>できること／できないこと</summary><div class="in"><div class="pair"><div class="ok">抜け漏れ防止（二重表現・CTA複数）<br>書き直し案の叩き台</div><div class="ng">映像の評価<br>共感・励まし<br>金額・法務の判断</div></div></div></details><details class=""><summary>検証の計画（未実施）</summary><div class="in"><ul><li>ロールプレイ18題の模範解答を「正解」に見立てる</li><li>AIの出力と模範を、ルーブリックで比べる</li><li>一致度が低い観点をプロンプトに反映する</li></ul><div class="note">実データでの一致度は<b>未検証</b>です。</div></div></details>
+<a class="next" href="onboarding.html">次へ：応募・認定 →</a>
+<footer>リードット 卒業生チーム運営マニュアル v2（全期間データ版）／非公開・内部向け／助言は「しゅり流の目安・仮説」で、時期により変わります</footer>
 </main>
 <script src="app.js"></script>
 </body>

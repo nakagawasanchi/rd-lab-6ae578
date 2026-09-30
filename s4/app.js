@@ -13,6 +13,7 @@
     var bar=document.getElementById('progbar'),lab=document.getElementById('proglab');if(!bar)return;
     var all=document.querySelectorAll('details.model'),n=0;all.forEach(function(d){if(d.open)n++});
     bar.style.width=(all.length?n/all.length*100:0)+'%';lab.textContent=n+' / '+all.length+' 題で模範解答を確認';
+    all.forEach(function(d){var q=d.closest('.case');if(!q)return;var c=document.querySelector('#chips a[data-q="'+q.id+'"]');if(c)c.classList.toggle('done',d.open)});
   }
   tas.forEach(function(t){
     try{t.value=localStorage.getItem('s4_'+t.dataset.k)||''}catch(e){}

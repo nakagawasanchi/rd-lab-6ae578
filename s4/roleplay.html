@@ -4,349 +4,76 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>ロールプレイ課題｜サポーター育成（試作版）</title>
+<title>ロールプレイ｜サポーター育成 v2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="beta">試作版（2026Q3データ版）／内部向け・非公開</div>
+<div class="beta">v2（全期間データ版）／内部向け・非公開</div>
 <header class="site"><div class="wrap">
-<a class="brand" href="index.html">サポーター育成</a>
-<nav class="tabs">
-<a href="index.html">概要</a><a href="flow.html">添削の型</a><a href="tone.html">語り口</a><a href="rubric.html">ルーブリック</a><a href="cases.html">NG例・判断表</a><a href="roleplay.html">ロールプレイ</a><a href="ops.html">SLA・守秘</a><a href="ai.html">AI一次チェック</a>
-</nav></div></header>
+<a class="brand" href="index.html">卒業生チーム</a>
+<nav class="tabs"><a href="index.html">概要</a><a href="roles.html">役割</a><a href="flow.html">添削の型</a><a href="tone.html">語り口</a><a href="rubric.html">ルーブリック</a><a href="cases.html">NG・判断表</a><a href="roleplay.html">ロールプレイ</a><a href="ops.html">運用ルール</a><a href="ai.html">AI一次チェック</a><a href="onboarding.html">応募・認定</a></nav></div></header>
 <main class="wrap">
 <a class="back" href="../index.html">← 5サービス比較トップへ</a>
-<section class="hero">
-<div class="kicker">⑤ ロールプレイ課題（全12題）</div>
-<h1>自分で添削 → しゅり流の模範解答と比較</h1>
-<p class="lead">匿名化した「Before要旨」を題材に、あなたならどう添削するかを先に書いてください。そのあと、模範解答（折りたたみ）を開いて比較します。</p>
-</section>
-
-<div class="card">
-<b>進め方</b>
-<ol>
-<li>状況と Before を読む</li>
-<li>下の入力欄に、<b>最重要指摘・理由・書き直し案</b>を書く（この端末のブラウザにだけ下書き保存されます）</li>
-<li>「模範解答を見る」を開いて比較し、<b>比較チェック</b>で自己採点</li>
-<li>ズレた点は、どの観点（<a href="rubric.html">ルーブリック</a>）のズレかをメモする</li>
-</ol>
-<div class="prog"><i id="progbar"></i></div><div class="meta" id="proglab">0 / 12 題で模範解答を確認</div>
-</div>
-<div class="note">Beforeは、文字起こしから指摘内容をもとに<b>復元した要旨</b>です（実際の台本ではありません）。模範解答は「一例」で、これ以外の正解もあり得ます。商品名・数字・人物は一般化しています。</div>
-
-<!-- Q1 -->
-<section class="case" id="q1">
-<span class="tag">第1題</span><span class="tag g">冒頭／PR</span><span class="tag c">難度：中</span>
-<h3>香りが売りの日用品PR</h3>
-<p><b>状況：</b>成長〜拡大期のメンバーが、香りをテーマにした日用品のPR台本を2案提出。先方の要望は商品をたくさん映すこと。</p>
-<p><b>Before（要旨）</b></p>
-<ul>
-<li>案1：家事が面倒 → 良い香りで面倒が減る、と話が飛び、辻褄が合わない</li>
-<li>案2：冒頭で「〇〇みたいな匂いだね」と別のものを引き合いに出す入り</li>
-<li>商品名が出るまでが長い。「〇〇監修」という難しい専門語がある</li>
-</ul>
-<p><b>お題：</b>最重要の指摘を1つ選び、理由と書き直しの方向を示してください。</p>
+<section class="hero"><div class="kicker">⑤ ロールプレイ（全18題）</div><h1>自分で添削 →<br>模範と比べる</h1></section>
+<section class="screen hl"><div class="ico">✍️</div><h2>先に自分で書いてから、答えを開く</h2><p>1題＝状況・Before・入力欄・模範（折りたたみ）</p></section><div class="card"><b>進み具合</b><div class="prog"><i id="progbar"></i></div><div class="meta" id="proglab">0 / 18 題で模範解答を確認</div><div class="chips" id="chips"><a href="#q1" data-q="q1">1</a><a href="#q2" data-q="q2">2</a><a href="#q3" data-q="q3">3</a><a href="#q4" data-q="q4">4</a><a href="#q5" data-q="q5">5</a><a href="#q6" data-q="q6">6</a><a href="#q7" data-q="q7">7</a><a href="#q8" data-q="q8">8</a><a href="#q9" data-q="q9">9</a><a href="#q10" data-q="q10">10</a><a href="#q11" data-q="q11">11</a><a href="#q12" data-q="q12">12</a><a href="#q13" data-q="q13">13</a><a href="#q14" data-q="q14">14</a><a href="#q15" data-q="q15">15</a><a href="#q16" data-q="q16">16</a><a href="#q17" data-q="q17">17</a><a href="#q18" data-q="q18">18</a></div></div><div class="note">Beforeは指摘から<b>復元した要旨</b>（元の台本ではありません）。模範解答は「一例」で、しゅり未監修です。下書きはこの端末にだけ保存されます。</div><section class="case" id="q1"><span class="tag">第1題</span><span class="tag g">冒頭／PR</span><span class="tag c">難度：中</span>
+<h3>香りが売りの日用品PR</h3><div class="st">成長〜拡大期のメンバーがPR台本を2案提出。先方の要望は「商品をたくさん映す」。</div><div class="bf"><b>Before（要旨）</b>　商品が出るまでが長い。冒頭に「〇〇みたいな匂い」と別物を引き合いに出している。</div><div class="q">お題：最重要の指摘を1つ選び、理由と直しの方向を書く。</div>
 <textarea data-k="q1" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>最重要指摘：</b>商品が出るまでの時間が長い／人によってイメージが分かれる表現（〇〇の匂い）を冒頭に置いている。</p>
-<p><b>理由：</b>秒数が長いと離脱が出るうえ、企業が望む「自社商品をたくさん映してほしい」にも反する。「〇〇の匂い」は人によってプラスにもマイナスにも取れ、別のものを出して否定する入りは避けたい。</p>
-<p><b>書き直し案（一例）：</b></p>
-<div class="quote">冒頭：「〇〇に敏感な家族も虜にした、香りがテーマの〇〇」と早めに商品、プラスのイメージだけで入る。<br>中盤：おすすめポイントをポンポンと並べる。専門語は「香りの専門家がこだわった」など日常語に。<br>最後：冒頭で張った伏線（敏感な人が絶賛）を「みんなが気に入ったよ」と回収。</div>
-<p><b>Loom締めの一例：</b>「お伝えしたかったのは、商品が出るまでが長いことと、イメージが割れる言葉を冒頭に置かないこと、この2点です。せっかく撮ってもらった映像が活かせるか心配ですが、一例として参考にして、アレンジしてください。」</p>
-<p><b>補足：</b>秒数指定がある案件は、実際にアフレコして秒数を測ってから案を出す。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> 「商品登場の遅さ」を最重要に挙げた</label>
-<label><input type="checkbox"> 企業視点（商品を早く映す）に触れた</label>
-<label><input type="checkbox"> 難しい語を日常語に直した</label>
-<label><input type="checkbox"> 伏線の回収に触れた</label></div>
-</div></details>
-</section>
-
-<!-- Q2 -->
-<section class="case" id="q2">
-<span class="tag">第2題</span><span class="tag g">企画／目的</span><span class="tag c">難度：中</span>
-<h3>コラボ飲料の裏技リール</h3>
-<p><b>状況：</b>成長期のメンバー。目的欄に「再生数」と「フォロワー増加」の両方を記載。キャラクターコラボのチルドカップ飲料を使った裏技を投稿したい。</p>
-<p><b>Before（要旨）</b></p>
-<ul>
-<li>冒頭でコラボ商品を強く押している（ブランド限定のネタ）</li>
-<li>元ネタは数か月前の投稿で、現在は真夏。時期がズレている</li>
-<li>本人の悩み：オリジナルを入れられなかった</li>
-</ul>
-<p><b>お題：</b>最初に伝えるべき「基本の考え方」と、企画をどう直すかを書いてください。</p>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>商品が出るまでが長い／イメージが割れる表現を冒頭に置いている</div><div><b>理由</b>秒数が長いと離脱する。企業の要望にも合わない。別のものを出す入りは、人によってマイナスに取れる。</div><div><b>直しの一例</b><ul><li>冒頭：早めに商品を出し、プラスのイメージだけで入る</li><li>専門語は日常語に（「香りの専門家がこだわった」）</li><li>冒頭で張った伏線を、最後に回収する</li></ul></div></div><p class="meta">補足：秒数指定の案件は、アフレコして秒数を測ってから案を出す。</p></div></details></section><section class="case" id="q2"><span class="tag">第2題</span><span class="tag g">企画／目的</span><span class="tag c">難度：中</span>
+<h3>コラボ飲料の裏技リール</h3><div class="st">成長期のメンバー。目的に「再生数」と「フォロワー増」の両方を記載。</div><div class="bf"><b>Before（要旨）</b>　コラボ商品を強く押している（ブランド限定）。元ネタが数か月前で、今は真夏。</div><div class="q">お題：最初に伝える「基本の考え方」と、企画の直し方を書く。</div>
 <textarea data-k="q2" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>最重要指摘：</b>再生数とフォロワー増は両立が難しい。今のフェーズはフォロワー増に特化し、そのために「有益さ」（見たことがない／その先の情報）を入れる。</p>
-<p><b>理由：</b>コラボ商品は「記憶に残せる範囲」で保存されにくい。ブランドで絞らなくても、チルドカップ全般で使えるネタになる。</p>
-<p><b>書き直し案（一例）：</b></p>
-<div class="quote">冒頭：「思わず試したくなる、ひんやりドリンクの裏技3選」（ブランド名なし、時期ワードを今に合わせる）<br>中身：凍らせたものを入れる、〇〇を組み合わせて〇〇風に、を具体名つきで。流行している「掛け合わせ」を持ち込む。<br>最後：コラボは一言だけ触れ、CTAは「保存して試してね」に統一。</div>
-<p><b>補足：</b>具体的な組み合わせがあると、真似する時に忘れるので保存される。ペルソナ（時間のないママ）は、手間のかかる工程を避けたい。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> 目的を1つに絞るよう伝えた</label>
-<label><input type="checkbox"> ブランドで絞らない提案をした</label>
-<label><input type="checkbox"> 時期ワードに触れた</label>
-<label><input type="checkbox"> 具体名を入れる（保存動機）</label>
-<label><input type="checkbox"> CTAを1つにした</label></div>
-</div></details>
-</section>
-
-<!-- Q3 -->
-<section class="case" id="q3">
-<span class="tag">第3題</span><span class="tag g">台本の言葉／5選</span><span class="tag c">難度：中</span>
-<h3>玄関収納の5選</h3>
-<p><b>状況：</b>成長期のメンバー。玄関まわりの収納を100均のバスケットで整える5選。伸びている型を借りた台本。「説明が長い。映像で分かる部分は省きたい」と相談。</p>
-<p><b>Before（要旨）</b></p>
-<ul>
-<li>冒頭：「汚れを溜めない仕組み」「綺麗な玄関をキープ」（同じ意味を二重に言っている）</li>
-<li>1つ目：ワイヤーだから〜、キャスターだから〜と、メリットを2つ入れている</li>
-<li>「ベビーカーグッズ」など対象を狭める言葉。「すぐ取り出せる」が複数箇所で重複</li>
-<li>最後のCTAが長い</li>
-</ul>
-<p><b>お題：</b>削る・足す・言い換える点を整理し、冒頭と1つ目を書き直してください。</p>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>再生とフォロー増は両立が難しい。今はフォロー増に絞り「有益さ」を入れる</div><div><b>理由</b>コラボ商品は保存されにくい。ブランドで絞らない方が、使える人が増える。</div><div><b>直しの一例</b><ul><li>冒頭：ブランド名なしで、今の時期に合う言葉に</li><li>中身：具体名つきの組み合わせ技を3つ</li><li>最後：コラボは一言だけ。CTAは「保存」に統一</li></ul></div></div><p class="meta">補足：具体的な組み合わせは、真似する時に忘れるので保存される。</p></div></details></section><section class="case" id="q3"><span class="tag">第3題</span><span class="tag g">台本の言葉／5選</span><span class="tag c">難度：中</span>
+<h3>玄関収納の5選</h3><div class="st">成長期のメンバー。「説明が長い。映像で分かる所は省きたい」と相談。</div><div class="bf"><b>Before（要旨）</b>　冒頭で同じ意味を二重に言っている。1つ目にメリットが2つ入っている。</div><div class="q">お題：削る・足す・言い換える点を整理し、冒頭と1つ目を書き直す。</div>
 <textarea data-k="q3" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>最重要指摘：</b>冒頭で同じ意味を二重に言っている（秒数がもったいない）。</p>
-<p><b>理由：</b>冒頭は数秒で見る/見ないが決まる。玄関は映像で分かるので言わなくてよい。空いた秒数に権威性を入れると「自分でも真似できるかも」と思ってもらえる。</p>
-<p><b>書き直し案（一例）：</b></p>
-<div class="quote">冒頭：「〇〇な私でもキレイをキープできるバスケット活用法5選」<br>1つ目：「〇〇に〇〇を付けて、たった〇〇円で可動式収納の完成。動かせるから掃除が楽」（メリットは1つに絞る）<br>2つ目：先に前提（使いやすい空間を無駄にしたくない）→「取っ手を内側に入れてスタッキング」<br>5つ目：疑問形で肩をトントン「このケース知ってる？〇〇と相性抜群…保存して探してみてね」</div>
-<p><b>その他：</b>初出の商品は名前を言い、既出は言わない。年齢を狭める語は避ける。「悲惨な泥んこ靴」のようにシーンが浮かぶ具体語にする。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> 冒頭の二重表現を指摘した</label>
-<label><input type="checkbox"> 権威性を冒頭に入れる提案をした</label>
-<label><input type="checkbox"> メリットを1つに絞った</label>
-<label><input type="checkbox"> CTAを短くした</label></div>
-</div></details>
-</section>
-
-<!-- Q4 -->
-<section class="case" id="q4">
-<span class="tag">第4題</span><span class="tag g">ネタ／ベネフィット／CTA</span><span class="tag c">難度：中</span>
-<h3>雑貨店の新作バッグインバッグ</h3>
-<p><b>状況：</b>成長期のメンバー。以前にも「バッグの中身がぐちゃぐちゃ」という悩みで投稿している。今回も同じ悩みで、雑貨店の新作を紹介したい。「同じ悩みを繰り返すのはどうか」と迷っている。CTAは「フォローしてね」にしたい。</p>
-<p><b>Before（要旨）</b></p>
-<ul>
-<li>商品の機能（ポケットの数、素材）を並べる台本</li>
-<li>冒頭：「全ママに見てほしい」</li>
-<li>文章が句点で短く切れている</li>
-</ul>
-<p><b>お題：</b>「同じ悩みで出してよいか」への回答と、台本・CTAの直しを書いてください。</p>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>冒頭で同じ意味を二重に言っている</div><div><b>理由</b>冒頭は数秒で見る・見ないが決まる。玄関は映像で分かるので言わなくていい。</div><div><b>直しの一例</b><ul><li>冒頭：「〇〇な私でもキレイをキープできる5選」</li><li>1つ目：メリットは1つに絞る</li><li>5つ目：疑問形で肩をトントン→「保存して探してね」</li></ul></div></div><p class="meta">補足：初出の商品は名前を言い、既出は言わない。</p></div></details></section><section class="case" id="q4"><span class="tag">第4題</span><span class="tag g">ネタ／CTA</span><span class="tag c">難度：中</span>
+<h3>雑貨店の新作バッグインバッグ</h3><div class="st">成長期のメンバー。前にも同じ悩みで投稿済み。CTAは「フォローしてね」にしたい。</div><div class="bf"><b>Before（要旨）</b>　機能（ポケット数・素材）を並べる台本。文章が句点で短く切れている。</div><div class="q">お題：「同じ悩みで出してよいか」への回答と、台本・CTAの直しを書く。</div>
 <textarea data-k="q4" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>結論：</b>同じ悩みに何度も別角度で出して問題なし。</p>
-<p><b>理由：</b>フォロワーの約1割が真似するという見方（仮説）で、別角度なら別の約1割に届く。</p>
-<p><b>台本の直し：</b></p>
-<ul>
-<li>機能ではなくベネフィット（バタバタしたくない、スマートに優雅にいられる）を言葉にする。「出せない」こと自体でなく、レジ前でアタフタする自分が嫌、という<b>本当の悩み</b>を言う</li>
-<li>冒頭は「全ママに見て」より、見ないと損の言葉（例：売り切れ前にチェック）。バズったものが売り切れるという認識のある店名は相性がよい</li>
-<li>句点は離脱ポイントになりやすいので、言葉を繋げて続ける</li>
-</ul>
-<p><b>CTA：</b>目的が再生数なら、フォローよりも「保存して〇〇で探してみてね」。消費紹介だけの投稿は、フォローとミスマッチになりやすい。再投稿の吹き出しに「友達にシェアしてね」を入れる手もある。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> 同じ悩みOKと回答し理由を添えた</label>
-<label><input type="checkbox"> 機能→ベネフィットにした</label>
-<label><input type="checkbox"> 目的に合わせてCTAを変えた</label>
-<label><input type="checkbox"> 句点の離脱に触れた</label></div>
-</div></details>
-</section>
-
-<!-- Q5 -->
-<section class="case" id="q5">
-<span class="tag">第5題</span><span class="tag g">ネタ選び</span><span class="tag c">難度：易</span>
-<h3>果物ひとつの裏技</h3>
-<p><b>状況：</b>立ち上げ期のメンバー。ある夏の果物1種類の保存・食べ方の裏技リールを企画。「どうでしょうか」と相談。</p>
-<p><b>Before（要旨）</b></p>
-<ul>
-<li>ネタは1種類の果物のみ。その果物の扱いに困っている人はあまり多くなさそう</li>
-<li>画角は手元だけ。ストーリーズはほぼ更新していない</li>
-</ul>
-<p><b>お題：</b>ネタの強さをどう判定し、どう提案しますか。ストーリーズと画角についても触れてください。</p>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>同じ悩みに別角度で何度出してもOK</div><div><b>理由</b>フォロワーの約1割が真似するという見方（仮説）。別角度なら別の1割に届く。</div><div><b>直しの一例</b><ul><li>機能でなくベネフィット（バタバタしたくない）を言う</li><li>冒頭は「見ないと損」の言葉に</li><li>CTAは目的が再生なら「保存」</li></ul></div></div><p class="meta">補足：句点は離脱ポイントになりやすい。繋げて続ける。</p></div></details></section><section class="case" id="q5"><span class="tag">第5題</span><span class="tag g">ネタ選び</span><span class="tag c">難度：易</span>
+<h3>果物ひとつの裏技</h3><div class="st">立ち上げ期のメンバー。夏の果物1種類の裏技リールを企画。</div><div class="bf"><b>Before（要旨）</b>　その果物で困る人は少なそう。画角は手元だけ。ストーリーズはほぼ更新なし。</div><div class="q">お題：ネタの強さの判定と提案。ストーリーズと画角にも触れる。</div>
 <textarea data-k="q5" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>判定：</b>「悩んでいる人がいない」ネタは弱い。フォローにつながりにくい。</p>
-<p><b>提案：</b>映像・鮮度・タイミング（知らなかったこと）で勝負するか、<b>横展開</b>（夏のフルーツ全般、夏野菜の冷凍など）で有益さと目新しさを出す。悩みが深いものを解決する方がフォローにつながる。</p>
-<p><b>リサーチ：</b>動画単体でなく、短期間でフォローも含めて伸びている人を見つけて分析する。</p>
-<p><b>ストーリーズ：</b>目的は「アイコンの虹色（アクティブの証明）」を保つこと。リールで来た人が1秒で判断する。中身は豆知識でもよい（ネガティブは避ける）。</p>
-<p><b>画角：</b>手ぶれしない、画面をぶらさない、手元を丁寧に。世界観は後から付いてくるので、今はネタ選びに集中。出したいなら引きの画角で。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> 弱い理由（悩みの母数）を説明した</label>
-<label><input type="checkbox"> 横展開を提案した</label>
-<label><input type="checkbox"> 「今は何に集中するか」を示した</label></div>
-</div></details>
-</section>
-
-<!-- Q6 -->
-<section class="case" id="q6">
-<span class="tag">第6題</span><span class="tag g">冒頭／映像</span><span class="tag c">難度：中</span>
-<h3>テーマパークのフード紹介</h3>
-<p><b>状況：</b>成長期のメンバー。テーマパークの限定フードを紹介するリール。フード紹介に初挑戦で「単調になりがち」と悩んでいる。</p>
-<p><b>Before（要旨）</b></p>
-<ul>
-<li>冒頭は食べ物のアップだけ。おすすめ欄で何の話か分かりにくい</li>
-<li>甘いものが得意でない本人だが、そのことは書かれていない</li>
-<li>商品を順番に食べていくだけの構成</li>
-</ul>
-<p><b>お題：</b>冒頭の改善と、映像を単調にしない提案を書いてください。</p>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>「悩んでいる人がいない」ネタは弱い</div><div><b>理由</b>フォローにつながりにくい。悩みが深いものを解決する方が、フォローされる。</div><div><b>直しの一例</b><ul><li>横展開する（夏のフルーツ全般など）</li><li>ストーリーズはアクティブの証明。豆知識でOK</li><li>画角は手ぶれ防止から。世界観は後でいい</li></ul></div></div><p class="meta">補足：リサーチは、短期間でフォローも伸びた人を分析する。</p></div></details></section><section class="case" id="q6"><span class="tag">第6題</span><span class="tag g">冒頭／映像</span><span class="tag c">難度：中</span>
+<h3>テーマパークのフード紹介</h3><div class="st">成長期のメンバー。フード紹介が初挑戦で「単調になりがち」と悩む。</div><div class="bf"><b>Before（要旨）</b>　冒頭は食べ物のアップだけ。商品を順番に食べるだけの構成。</div><div class="q">お題：冒頭の改善と、映像を単調にしない提案を書く。</div>
 <textarea data-k="q6" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>最重要指摘：</b>そのパークらしさが冒頭で伝わらない。奥にキャラクターのぬいぐるみやパッケージを映す。</p>
-<p><b>理由：</b>おすすめ欄で何の話か分からないと、指が止まらない。</p>
-<p><b>冒頭に「見るべき理由」を：</b>「甘いものが得意じゃない私でもハマった」「スイーツにはうるさい私が」のようなギャップ型の一言を入れる。</p>
-<p><b>映像アイデア：</b>指パッチンで変身、投げてキャッチしたら別物（ミニチュア→本物 等）。手の位置を同じにして反動をつけ、キャッチの瞬間だけ使う。フード紹介は単調になりがちなので、映像で遊ぶ。</p>
-<p><b>構成：</b>持ち物・アイテム紹介ならトップ5のカウントダウン（5番目から）で1位を見逃したくなくさせる。1商品につき3〜4行で掘り下げる。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> 「何のリールか」を1秒で伝えた</label>
-<label><input type="checkbox"> 見るべき理由（ギャップ）を入れた</label>
-<label><input type="checkbox"> 単調さの解消策を出した</label></div>
-</div></details>
-</section>
-
-<!-- Q7 -->
-<section class="case" id="q7">
-<span class="tag">第7題</span><span class="tag g">バズワード／構成</span><span class="tag c">難度：中</span>
-<h3>マグネット式タオルバー</h3>
-<p><b>状況：</b>立ち上げ期のメンバー。100均のマグネットタオルバーの使い方を5選にしたい。「収納のリールと言っていいのか」と迷っている。</p>
-<p><b>Before（要旨）</b></p>
-<ul>
-<li>冒頭に「100均」の言葉がない</li>
-<li>5つの使い方が、キッチン・洗面・お風呂などバラバラ</li>
-<li>普通すぎるアイデアが混じっている。元ネタの冒頭は「天井に何かをくっつける」インパクトの強い映像</li>
-</ul>
-<p><b>お題：</b>「収納と言っていいか」への答えと、5選の直し方を書いてください。</p>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>そのパークらしさが冒頭で伝わらない</div><div><b>理由</b>おすすめ欄で何の話か分からないと、指が止まらない。</div><div><b>直しの一例</b><ul><li>奥にぬいぐるみやパッケージを映す</li><li>「甘いものが苦手な私でもハマった」のギャップ型の一言</li><li>トップ5のカウントダウン形式にする</li></ul></div></div><p class="meta">補足：映像で遊ぶ：指パッチンで変身、キャッチの瞬間だけ使う。</p></div></details></section><section class="case" id="q7"><span class="tag">第7題</span><span class="tag g">バズワード／構成</span><span class="tag c">難度：中</span>
+<h3>マグネット式タオルバー</h3><div class="st">立ち上げ期のメンバー。100均のバーの使い方を5選にしたい。「収納と言っていい？」と迷う。</div><div class="bf"><b>Before（要旨）</b>　冒頭に「100均」がない。5つの使い方がバラバラで、普通すぎる案が混じる。</div><div class="q">お題：「収納と言っていいか」への答えと、5選の直し方を書く。</div>
 <textarea data-k="q7" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>「収納と言っていいか」：</b>物を片付ける収納ではないが、「スペースを有効活用して、すっきり暮らす」という意味で共通点がある。収納を増やしたい人に響くので、やってよい。</p>
-<p><b>最重要指摘：</b>「100均」ワードを冒頭に。100均でコスパ良く収納ポイントを増やせることが、見る人にとってのメリット。早めに知らせる。</p>
-<p><b>構成：</b>元ネタは冒頭の映像インパクトが強い（日常で見ない動作）ので残す。普通すぎるものは外し、「お風呂・洗面まわりで使える技」にまとめて絞る。足りない分は100均で作れる別案を考える。ネタを精査する。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> バズワードを冒頭に入れた</label>
-<label><input type="checkbox"> 共通点で縛る提案をした</label>
-<label><input type="checkbox"> ネタ自体の精査を促した</label></div>
-</div></details>
-</section>
-
-<!-- Q8 -->
-<section class="case" id="q8">
-<span class="tag">第8題</span><span class="tag g">ネタ選び／意外性</span><span class="tag c">難度：高</span>
-<h3>どちらのアイデアにするか</h3>
-<p><b>状況：</b>成長期のメンバーが、コレクション系グッズの活用アイデアを2案提示。「どちらがよいか」と相談。案Aは、本来の用途に近い使い方。案Bは、まったく別の用途に転用する使い方。</p>
-<p><b>お題：</b>どちらを勧めますか。判断の軸を、他のネタにも使えるように説明してください。</p>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>「100均」ワードを冒頭に入れる</div><div><b>理由</b>100均で収納ポイントが増えることが、見る人のメリット。早く知らせる。</div><div><b>直しの一例</b><ul><li>「収納」と言ってOK（スペース有効活用の共通点）</li><li>元ネタの強い映像は残す</li><li>普通すぎる案は外し、お風呂・洗面まわりに絞る</li></ul></div></div></div></details></section><section class="case" id="q8"><span class="tag">第8題</span><span class="tag g">ネタ選び／意外性</span><span class="tag c">難度：高</span>
+<h3>どちらのアイデアにする？</h3><div class="st">成長期のメンバーが2案で相談。A：本来の用途に近い使い方。B：まったく別の用途に転用。</div><div class="bf"><b>Before（要旨）</b>　どちらも悪くない。判断の軸が分からない。</div><div class="q">お題：どちらを勧める？判断の軸を、他のネタにも使える形で。</div>
 <textarea data-k="q8" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>結論：</b>案B（意外性が大きい方）。</p>
-<p><b>判断の軸：</b>アイデア投稿は「本来の目的と、見せる使い方の距離が大きいほど」意外性が出て、「その手があったか」という感情が動く。しゅり自身、この考え方で伸ばしてきたという発想法。</p>
-<p><b>おまけ要素：</b>意外な使い方のあとに「しかもさ」のテンションで、デメリットをカバーする機能（例：穴があるからチェーンを通せる）を見せると、納得感とお得感が増して、いいね・保存につながる。</p>
-<p><b>呼び名：</b>動画内は視聴者が同じものを連想できる呼び名にし、正式名称はキャプションへ。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> 「意外性の距離」を基準にした</label>
-<label><input type="checkbox"> おまけ要素に触れた</label>
-<label><input type="checkbox"> 他のネタにも使える言い方にした</label></div>
-</div></details>
-</section>
-
-<!-- Q9 -->
-<section class="case" id="q9">
-<span class="tag">第9題</span><span class="tag g">構成／開封</span><span class="tag c">難度：易</span>
-<h3>開封動画</h3>
-<p><b>状況：</b>成長期のメンバー。ギフティングで届いた商品の開封動画を撮った。時間がなく、これを出したい。</p>
-<p><b>Before（要旨）</b></p>
-<ul>
-<li>開けて、見せて、「かわいい」で終わる</li>
-<li>1カット目が手ぶれしていて、何に対する「本物？」かが分かりにくい言い回し</li>
-<li>アフレコがやや小さく、語尾が下がる</li>
-</ul>
-<p><b>お題：</b>時間がない本人に、最小限でどう直すよう伝えますか。</p>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>案B（意外性が大きい方）</div><div><b>理由</b>本来の用途と見せ方の「距離」が大きいほど、「その手があったか」で感情が動く。</div><div><b>直しの一例</b><ul><li>意外な使い方のあとに「しかも」のおまけ要素</li><li>デメリットをカバーする機能を見せる</li><li>動画内は呼び名、正式名称はキャプションへ</li></ul></div></div></div></details></section><section class="case" id="q9"><span class="tag">第9題</span><span class="tag g">構成／開封</span><span class="tag c">難度：易</span>
+<h3>開封動画</h3><div class="st">成長期のメンバー。ギフティング商品の開封動画。時間がなく、これを出したい。</div><div class="bf"><b>Before（要旨）</b>　「かわいい」で終わる。1カット目が手ぶれ。アフレコの語尾が下がる。</div><div class="q">お題：時間がない本人に、最小限でどう直すよう伝える？</div>
 <textarea data-k="q9" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>最重要指摘：</b>開封は撮りやすいが、感情が「かわいい」だけで終わり、フォローにつながりにくい。もう1つ感情を動かす要素（組み合わせて収納にする／意外な使い方）を足して、一撃で濃くする。</p>
-<p><b>冒頭：</b>1カット目の手ぶれは不快。何を予感させるカットか（開ける瞬間など）を先に見せる。「まさか本物？」のように、何に対してか分からない言い方は避ける。</p>
-<p><b>アフレコ：</b>自分が思うより元気に、早口で言葉を落とさず一気に読む。語尾が下がると離脱しやすい（目安：元のトーンよりかなり上げるつもりで）。</p>
-<p><b>時間がないとき：</b>すでに伸びたものを擦る（冒頭を変えて出す）。100点を目指さず、ひと手間だけ足す。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> 開封の弱点を説明した</label>
-<label><input type="checkbox"> 最小限の直しに絞った</label>
-<label><input type="checkbox"> 本人の状況に配慮した</label></div>
-</div></details>
-</section>
-
-<!-- Q10 -->
-<section class="case" id="q10">
-<span class="tag">第10題</span><span class="tag g">ビフォーアフター／台本</span><span class="tag c">難度：中</span>
-<h3>洗剤PRのビフォーアフター</h3>
-<p><b>状況：</b>拡大期のメンバーが、洗剤のPR（固定案件）を提出。汚れた状態と、洗剤で落ちた状態を見せる構成。</p>
-<p><b>Before（要旨）</b></p>
-<ul>
-<li>汚れの多いものから見せ、次に少ないものを見せている</li>
-<li>台本の文章が「〜です。」と短く切れている</li>
-<li>「日に当てれば」という表現</li>
-</ul>
-<p><b>お題：</b>順序・文章・表現の3点について、理由つきで直してください。</p>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>「かわいい」だけで終わらず、もう1つ感情を動かす要素を足す</div><div><b>理由</b>開封は撮りやすいが、感情が1つだと弱い。組み合わせ収納や意外な使い方を足すと濃くなる。</div><div><b>直しの一例</b><ul><li>1カット目の手ぶれを直し、何を予感させるカットか先に</li><li>アフレコは元気に早口で、語尾を上げる</li><li>時間がない時は、伸びた冒頭を変えて出す</li></ul></div></div><p class="meta">補足：100点を目指さず、ひと手間だけ足す。</p></div></details></section><section class="case" id="q10"><span class="tag">第10題</span><span class="tag g">ビフォーアフター</span><span class="tag c">難度：中</span>
+<h3>洗剤PRのビフォーアフター</h3><div class="st">拡大期のメンバーが提出。汚れた状態と、落ちた状態を見せる構成。</div><div class="bf"><b>Before（要旨）</b>　汚れが多い方から見せている。文章が「〜です。」と切れている。「日に当てれば」。</div><div class="q">お題：順序・文章・表現の3点を、理由つきで直す。</div>
 <textarea data-k="q10" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>順序：</b>ビフォーアフターは、汚れが少ない方 → 多い方の順で見せる。冒頭の3カットで型にはめる（1秒しか見ない人でも、違いが分かる）。</p>
-<p><b>文章：</b>文章を途中で切らず、長い一文にして離脱を防ぐ（人は文章の途中では離れにくいという仮説）。</p>
-<p><b>表現：</b>「日に当てれば」は日光の力のニュアンスになる。「外干しすれば／外で干したら」などに。</p>
-<p><b>PRの観点：</b>企業視点で、商品を早く映し、効果が分かる映像を確保する。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> 順序の理由を説明した</label>
-<label><input type="checkbox"> 表現の誤解の余地を指摘した</label>
-<label><input type="checkbox"> 文章を繋げる提案をした</label></div>
-</div></details>
-</section>
-
-<!-- Q11 -->
-<section class="case" id="q11">
-<span class="tag">第11題</span><span class="tag g">成果報告／分析</span><span class="tag c">難度：高</span>
-<h3>「いいねは良いのに伸びなかった」</h3>
-<p><b>状況：</b>月次の成果報告への返信。成長期のメンバーの1本が、フォロワーの反応（いいね・保存）は良かったのに、外に広がらず再生が伸びなかった。離脱グラフでは、冒頭で大きく落ちている。</p>
-<p><b>お題：</b>原因の切り分けと、次の一手を書いてください（断定しすぎないように）。</p>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>汚れが少ない方 → 多い方の順に見せる</div><div><b>理由</b>冒頭3カットで型にはめると、1秒しか見ない人にも違いが伝わる。</div><div><b>直しの一例</b><ul><li>文章は切らず長い一文にして離脱を防ぐ（仮説）</li><li>「日に当てれば」→「外で干したら」に</li><li>商品を早く映し、効果が分かる映像を確保</li></ul></div></div></div></details></section><section class="case" id="q11"><span class="tag">第11題</span><span class="tag g">成果報告／分析</span><span class="tag c">難度：高</span>
+<h3>「いいねは良いのに伸びなかった」</h3><div class="st">月次の報告。フォロワーの反応は良いが、外に広がらなかった。</div><div class="bf"><b>Before（要旨）</b>　離脱グラフで、冒頭が大きく落ちている。</div><div class="q">お題：原因の切り分けと次の一手（断定しすぎない）。</div>
 <textarea data-k="q11" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>切り分け：</b>離脱グラフを3分類で見る。①冒頭2秒で残せているか ②中盤の落ち（悩みが長い等）③後半・最後の落ち。冒頭で落ちているなら、①が主因の可能性が高い。</p>
-<p><b>解釈（仮説）：</b>内部（フォロワー）の反応は良かったが、外部に出なかった原因は「冒頭のスキップ率」と考えられる。中身が良ければ、冒頭だけ変えて再投稿できる。</p>
-<p><b>次の一手：</b>冒頭だけ変えたバージョンをトライアルで回す。倍速などで全体の秒数を変え、同一扱いを避ける。冒頭の見直し観点：無駄な導入カットを切る、答えを出しすぎない、共感しやすい映像を先に。</p>
-<p><b>指標の目安（しゅり流）：</b>いいねは再生数の約10%が良い水準、保存はいいねの1.5倍を狙う。ただし個人に当てはめて評価しない。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> 3分類で原因を切り分けた</label>
-<label><input type="checkbox"> 仮説として書いた</label>
-<label><input type="checkbox"> 「再投稿」という次の一手を示した</label></div>
-</div></details>
-</section>
-
-<!-- Q12 -->
-<section class="case" id="q12">
-<span class="tag">第12題</span><span class="tag g">PR／エスカレ判断</span><span class="tag c">難度：高</span>
-<h3>PR単価の相談（判断の練習）</h3>
-<p><b>状況：</b>拡大期のメンバーから、企業からのPR打診に対して、提示された単価が低いのだが、どう返すかの相談。「初めての案件なので、まずは受けたほうがよいか」と迷っている。</p>
-<p><b>お題：</b>サポーターとして、どこまで自分で答え、何をしゅりに上げますか。</p>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>離脱グラフを3分類で見る。冒頭が主因の可能性が高い</div><div><b>理由</b>内部の反応が良くても、冒頭で外部に出なかったと考えられる（仮説）。</div><div><b>直しの一例</b><ul><li>冒頭だけ変えたバージョンをトライアルで回す</li><li>倍速などで秒数を変え、同一扱いを避ける</li><li>無駄な導入カットを切る</li></ul></div></div><p class="meta">補足：目安：いいねは再生の約10%、保存はいいねの1.5倍。個人に当てはめて評価しない。</p></div></details></section><section class="case" id="q12"><span class="tag">第12題</span><span class="tag g">PR／エスカレ判断</span><span class="tag c">難度：高</span>
+<h3>PR単価の相談</h3><div class="st">拡大期のメンバーが、PR打診の単価が低いと相談。「初めてだし受けるべき？」</div><div class="bf"><b>Before（要旨）</b>　具体の金額と契約に関わる相談。</div><div class="q">お題：どこまで自分で答え、何をしゅりに上げる？</div>
 <textarea data-k="q12" placeholder="あなたの添削を書いてください"></textarea>
-<details class="model"><summary>模範解答を見る</summary><div class="in">
-<p><b>自分で答えてよい範囲（一般的な考え方）：</b></p>
-<ul>
-<li>しゅり流の目安：PRの単価は「フォロワー数×1円」くらいを一つの目安にする考え方がある</li>
-<li>初回に低額で受けると、その後の基準が下がりやすい</li>
-<li>付加価値（ハイライト固定、ストーリーズ回数、横展開など）をつけて交渉する方法がある</li>
-<li>断られてからが勝負、という姿勢</li>
-<li>収益の「最低ライン」を埋める目的なら、受けてもよい</li>
-</ul>
-<p><b>しゅりに上げる（エスカレ）：</b></p>
-<ul>
-<li>具体的な金額の提案・個別の交渉文面（案件特有の判断）</li>
-<li>契約書の内容（修正回数、報酬発生のタイミング等）の判断</li>
-<li>薬機法・表現の適法性の判断</li>
-</ul>
-<p><b>言い方：</b>「金額は目安としてこの考え方があります。この案件に当てはめる判断はしゅりに確認しますね」と、断定を避ける。</p>
-<div class="chk"><b>比較チェック</b>
-<label><input type="checkbox"> 金額を断定しなかった</label>
-<label><input type="checkbox"> 「目安・考え方」として伝えた</label>
-<label><input type="checkbox"> エスカレの範囲を明確にした</label></div>
-</div></details>
-</section>
-
-<div class="tip"><b>認定への活用：</b>12題の回答を提出し、しゅりまたは認定済みサポーターがルーブリック（<a href="rubric.html">添削の質の5点</a>）でレビューする想定です。</div>
-
-<footer>リードット サポーター育成プログラム 試作版（2026Q3データ版）</footer>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>一般論は答え、個別の金額・契約はしゅりへ</div><div><b>理由</b>初回に低額で受けると基準が下がりやすい。ただし個別判断は責任が重い。</div><div><b>直しの一例</b><ul><li>答えてOK：単価はフォロワー数×1円が目安（しゅり流）</li><li>答えてOK：付加価値をつけて交渉する方法</li><li>上げる：具体金額・契約内容・薬機法の判断</li></ul></div></div><p class="meta">補足：言い方：「目安はこの考え方です。この案件はしゅりに確認しますね」</p></div></details></section><section class="case" id="q13"><span class="tag">第13題</span><span class="tag g">悩みなし商品</span><span class="tag c">難度：中</span><span class="tag new">NEW</span>
+<h3>インスタント飲料のPR</h3><div class="st">拡大期のメンバー。悩みに結びつけにくい商品のPR台本。</div><div class="bf"><b>Before（要旨）</b>　無理に「悩み→解決」に当てはめ、しっくり来ない。</div><div class="q">お題：どう構成を組み直す？AIの使い方にも触れて。</div>
+<textarea data-k="q13" placeholder="あなたの添削を書いてください"></textarea>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>悩み解決型にこだわらない（悩みなし構成）</div><div><b>理由</b>悩みを無理に作ると自分も納得できない。生活の質を一つ上げる商品として見せる。</div><div><b>直しの一例</b><ul><li>流れ：得られる未来 → すぐ商品 → 押しポイント</li><li>自分ごと化のワード → 使った気分 → 心の声</li><li>最後は「コメントで教えて」</li></ul></div></div><p class="meta">補足：AIは30代ママの共感を測れない。共感できるかは人が判断する。（2025/09〜）</p></div></details></section><section class="case" id="q14"><span class="tag">第14題</span><span class="tag g">二重訴求</span><span class="tag c">難度：中</span><span class="tag new">NEW</span>
+<h3>作り置き3選の冒頭</h3><div class="st">成長期のメンバー。作り置きの3選リール。</div><div class="bf"><b>Before（要旨）</b>　冒頭と悩みで、同じ趣旨（「一度決めれば楽」）を2回言っている。</div><div class="q">お題：どこをどう直す？</div>
+<textarea data-k="q14" placeholder="あなたの添削を書いてください"></textarea>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>二重訴求を削り、悩みを「ママの気持ちの代弁」にする</div><div><b>理由</b>同じ趣旨の重複は秒数がもったいない。10秒以内に商品を出したい。</div><div><b>直しの一例</b><ul><li>冒頭：得られる未来を1回だけ</li><li>悩み：「毎日考えるのが面倒」と気持ちを代弁</li><li>削った秒数で、具体的な一次情報を足す</li></ul></div></div><p class="meta">補足：言葉のダイエット：台本から削ると映像の無駄も消える。（2025/07〜）</p></div></details></section><section class="case" id="q15"><span class="tag">第15題</span><span class="tag g">常識破壊を具体的に</span><span class="tag c">難度：中</span><span class="tag new">NEW</span>
+<h3>刃がないおろし金</h3><div class="st">成長期のメンバー。常識を覆す特徴（刃がない）を冒頭で伝えたい。</div><div class="bf"><b>Before（要旨）</b>　冒頭で「あえて伏せる」。「小さな欠点」と誤解されそう。</div><div class="q">お題：冒頭をどう直す？</div>
+<textarea data-k="q15" placeholder="あなたの添削を書いてください"></textarea>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>「刃がない」と具体的に言う</div><div><b>理由</b>伏せると、どうでもいい欠点と思われてスルーされる。足を止めるのは、何がないかの具体。</div><div><b>直しの一例</b><ul><li>冒頭：「おろし金なのに刃がない？」</li><li>ベネフィットまで言う（ヒヤヒヤしなくなる）</li><li>あるあるの悩みから共感を作る</li></ul></div></div><p class="meta">補足：（2025/10〜12）</p></div></details></section><section class="case" id="q16"><span class="tag">第16題</span><span class="tag g">先にモノを見せる</span><span class="tag c">難度：中</span><span class="tag new">NEW</span>
+<h3>転落防止ストッパーの2本比較</h3><div class="st">立ち上げ期のメンバー。元ネタ2本のどちらに合わせるか迷う。</div><div class="bf"><b>Before（要旨）</b>　「落ちる」から始めるとモノが出るまで遅い。</div><div class="q">お題：再生差の原因と、冒頭の直し方を書く。</div>
+<textarea data-k="q16" placeholder="あなたの添削を書いてください"></textarea>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>冒頭でモノが映るかどうか</div><div><b>理由</b>先にモノが映る方が再生が伸びる。後出しはもどかしい。</div><div><b>直しの一例</b><ul><li>冒頭でモノ＋お手頃感を先出し</li><li>疑問形にせず「そんな時使ってほしいのがこれ」</li><li>難語は3〜4歳にも分かる言葉に</li></ul></div></div><p class="meta">補足：商品は10秒以内に出す。（2025/09〜2026/03）</p></div></details></section><section class="case" id="q17"><span class="tag">第17題</span><span class="tag g">取りこぼし3分割</span><span class="tag c">難度：高</span><span class="tag new">NEW</span>
+<h3>離脱を防ぐ言葉の設計</h3><div class="st">成長期のメンバー。需要も目新しさもあるネタ。あとは「取りこぼさない」設計を学びたい。</div><div class="bf"><b>Before（要旨）</b>　競合の構成に言葉を合わせただけ。</div><div class="q">お題：冒頭・中盤・最後で、それぞれ何を狙う？</div>
+<textarea data-k="q17" placeholder="あなたの添削を書いてください"></textarea>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>冒頭＝指を止める／中盤＝見続ける／最後＝残す</div><div><b>理由</b>取りこぼしは細かい言葉の積み重ね。3つに分けて考えると直しやすい。</div><div><b>直しの一例</b><ul><li>聞き慣れない言葉・限定語は避ける</li><li>細かい注意は言わない</li><li>最後はコメントやもう一周したくなる終わりに</li></ul></div></div><p class="meta">補足：（2025/10）</p></div></details></section><section class="case" id="q18"><span class="tag">第18題</span><span class="tag g">PR修正・怪しい案件</span><span class="tag c">難度：高</span><span class="tag new">NEW</span>
+<h3>企業の修正依頼／怪しい打診</h3><div class="st">拡大期のメンバー。①企業から言葉の修正指示。②怪しいDM案件の打診。</div><div class="bf"><b>Before（要旨）</b>　①強い言葉を直すよう言われ混乱。②「取りこぼしたくない」と「怪しい」の間で悩む。</div><div class="q">お題：それぞれ、どう返す？どこを上げる？</div>
+<textarea data-k="q18" placeholder="あなたの添削を書いてください"></textarea>
+<details class="model"><summary>模範解答を見る</summary><div class="in"><div class="m3"><div><b>最重要指摘</b>①期日を守り、直しやすい所から ②危険な匂いなら辞めてよい</div><div><b>理由</b>①企業のテイストに合わせる。②危ない橋を渡ってまで経験を増やす必要はない。</div><div><b>直しの一例</b><ul><li>①混乱したらしゅりの助言は一旦スルーでも可</li><li>②怪しさが大きければ、丁寧に断る</li><li>契約・金額の判断はしゅりへ</li></ul></div></div><p class="meta">補足：断り方：「今のリソースと見比べて、応援が難しいと判断しました」（2025/10・2026/03）</p></div></details></section>
+<a class="next" href="ops.html">次へ：運用ルール →</a>
+<footer>リードット 卒業生チーム運営マニュアル v2（全期間データ版）／非公開・内部向け／助言は「しゅり流の目安・仮説」で、時期により変わります</footer>
 </main>
 <script src="app.js"></script>
 </body>
