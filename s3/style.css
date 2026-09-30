@@ -1,0 +1,103 @@
+:root{
+  --ink:#24313b; --sub:#5b6873; --teal:#1d6a74; --teal-d:#154f57; --teal-l:#e3f1f2;
+  --gold:#c48a2f; --gold-l:#fbf1de; --rose:#b4483f; --rose-l:#fbe9e6;
+  --bg:#faf7f1; --card:#fff; --line:#e6dfd2; --radius:14px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,-apple-system,"Hiragino Sans",sans-serif;line-height:1.85;font-size:16px}
+img{max-width:100%}
+a{color:var(--teal);text-underline-offset:3px}
+.proto{background:var(--ink);color:#fff;text-align:center;font-size:12px;padding:6px 12px;letter-spacing:.04em}
+.proto b{color:#f3c979}
+header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.hwrap{max-width:1040px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;color:var(--teal-d);text-decoration:none;font-size:15px;line-height:1.3}
+.logo small{display:block;font-weight:500;color:var(--sub);font-size:11px}
+.back{margin-left:auto;font-size:12px;color:var(--sub);text-decoration:none;border:1px solid var(--line);padding:4px 10px;border-radius:99px;white-space:nowrap}
+nav.tabs{max-width:1040px;margin:0 auto;padding:0 16px 8px;display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav.tabs a{flex:0 0 auto;font-size:12.5px;text-decoration:none;color:var(--ink);background:var(--teal-l);padding:4px 11px;border-radius:99px;white-space:nowrap}
+nav.tabs a.on{background:var(--teal);color:#fff}
+nav.tabs a.tool{background:var(--gold-l)}
+nav.tabs a.tool.on{background:var(--gold);color:#fff}
+main{max-width:760px;margin:0 auto;padding:24px 16px 56px}
+main.wide{max-width:1040px}
+h1,h2,h3{font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif;line-height:1.5;color:var(--teal-d)}
+h1{font-size:26px;margin:.2em 0 .4em}
+h2{font-size:20px;margin:2em 0 .6em;padding-left:12px;border-left:5px solid var(--gold)}
+h3{font-size:16.5px;margin:1.6em 0 .4em}
+.eyebrow{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:.08em}
+.lead{font-size:16.5px;color:var(--sub)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin:14px 0}
+.grid{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:640px){.grid.c2{grid-template-columns:1fr 1fr}.grid.c3{grid-template-columns:1fr 1fr 1fr}}
+.grid a.card{text-decoration:none;color:inherit;display:block;margin:0;transition:.15s}
+.grid a.card:hover{border-color:var(--teal);transform:translateY(-1px)}
+.card .no{font-family:"Zen Maru Gothic";font-weight:700;color:var(--gold);font-size:12px}
+.card b.t{display:block;color:var(--teal-d);font-family:"Zen Maru Gothic";font-size:16px;line-height:1.5}
+.card span.d{font-size:13.5px;color:var(--sub);line-height:1.6;display:block;margin-top:4px}
+.callout{border-radius:12px;padding:12px 16px;margin:16px 0;font-size:15px}
+.callout .lb{display:inline-block;font-size:11.5px;font-weight:700;padding:1px 9px;border-radius:99px;margin-bottom:4px;color:#fff}
+.callout.tip{background:var(--gold-l);border:1px solid #efd9ad}.callout.tip .lb{background:var(--gold)}
+.callout.hyp{background:var(--teal-l);border:1px solid #bfdfe2}.callout.hyp .lb{background:var(--teal)}
+.callout.warn{background:var(--rose-l);border:1px solid #efc4be}.callout.warn .lb{background:var(--rose)}
+.callout p{margin:.3em 0}
+.callout ul{margin:.3em 0;padding-left:1.3em}
+ul.ck,ul.plain{padding-left:1.3em}
+li{margin:.25em 0}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0;background:#fff}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--teal-l);color:var(--teal-d)}
+.tblwrap{overflow-x:auto}
+.flow{list-style:none;padding:0;margin:14px 0;counter-reset:s}
+.flow li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px 10px 52px;position:relative;margin:8px 0}
+.flow li::before{content:counter(s);position:absolute;left:12px;top:10px;width:28px;height:28px;border-radius:50%;background:var(--teal);color:#fff;text-align:center;line-height:28px;font-weight:700;font-size:14px}
+.flow li b{color:var(--teal-d)}
+.pager{display:flex;justify-content:space-between;gap:10px;margin-top:40px;flex-wrap:wrap}
+.pager a{flex:1 1 200px;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:14px;color:var(--ink)}
+.pager a small{display:block;color:var(--gold);font-size:11px}
+.pager a.next{text-align:right}
+.hero{background:linear-gradient(135deg,#1d6a74,#154f57);color:#fff;padding:34px 16px 40px}
+.hero .in{max-width:760px;margin:0 auto}
+.hero h1{color:#fff;font-size:27px}
+.hero p{color:#dcecee;margin:.5em 0}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.15);border-radius:99px;padding:2px 12px;font-size:12px;margin:0 6px 6px 0}
+.btn{display:inline-block;background:var(--gold);color:#fff;text-decoration:none;font-weight:700;border-radius:99px;padding:10px 22px;border:0;font-size:15px;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.6)}
+.btn.sm{padding:5px 14px;font-size:13px}
+.btn.line{background:#fff;color:var(--teal);border:1px solid var(--teal)}
+.disc{font-size:12.5px;color:var(--sub);border-top:1px solid var(--line);margin-top:40px;padding-top:14px}
+footer.site{background:#fff;border-top:1px solid var(--line);padding:18px 16px;font-size:12px;color:var(--sub);text-align:center}
+/* tools */
+label{display:block;font-size:13.5px;font-weight:700;color:var(--teal-d);margin:12px 0 4px}
+label small{font-weight:400;color:var(--sub)}
+input[type=number],input[type=text],textarea,select{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:1px solid #cfc7b6;border-radius:10px;background:#fff;color:var(--ink)}
+textarea{min-height:76px;resize:vertical}
+.res{background:var(--teal-d);color:#fff;border-radius:var(--radius);padding:14px 18px;margin:14px 0}
+.res .big{font-family:"Zen Maru Gothic";font-size:26px;font-weight:700;color:#f3c979}
+.res .row{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid rgba(255,255,255,.15);padding:6px 0;font-size:14px;flex-wrap:wrap}
+.res .row:last-child{border:0}
+.chk{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0;cursor:pointer}
+.chk input{margin-top:6px;width:20px;height:20px;flex:0 0 auto;accent-color:var(--teal)}
+.chk span{font-size:15px}
+.chk em{display:block;font-style:normal;font-size:12.5px;color:var(--sub)}
+.chk.red{border-left:5px solid var(--rose)}
+.chk.done{background:var(--teal-l)}
+.meter{height:10px;background:#e8e1d3;border-radius:99px;overflow:hidden;margin:6px 0}
+.meter i{display:block;height:100%;width:0;background:var(--teal);transition:width .2s}
+.phrase{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:12px 0}
+.phrase h3{margin:0 0 4px;font-size:15px}
+.phrase .when{font-size:12.5px;color:var(--sub);margin:0 0 6px}
+.phrase .txt{background:var(--bg);border-radius:8px;padding:10px 12px;font-size:14.5px;white-space:pre-wrap;line-height:1.75}
+.phrase .btn{margin-top:8px}
+.copied{background:var(--teal)!important}
+.filter{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.filter button{border:1px solid var(--line);background:#fff;border-radius:99px;padding:4px 12px;font-size:13px;cursor:pointer;font-family:inherit}
+.filter button.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.case{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin:18px 0}
+.case h3{margin-top:0}
+.case dl{margin:0}
+.case dt{font-weight:700;color:var(--gold);font-size:12.5px;margin-top:10px}
+.case dd{margin:2px 0 0}
+.chip{display:inline-block;font-size:11.5px;background:var(--teal-l);color:var(--teal-d);border-radius:99px;padding:1px 9px;margin-right:4px}
+@media print{.proto,header.site,nav.tabs,.btn,.pager,footer.site,.noprint{display:none!important}body{background:#fff}}
