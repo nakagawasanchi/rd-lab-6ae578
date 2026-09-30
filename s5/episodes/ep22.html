@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>時間がない。もうパンクしそう｜宿屋しゅりの冒険者育成</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="ep" data-root="../" data-ep="ep22">
+<div class="ep-wrap">
+  <header class="ep-head">
+    <a class="back" href="../map.html#hearth">◀ マップ</a>
+    <span class="place" id="place"></span>
+    <div class="ep-bar"><i id="bar"></i></div>
+  </header>
+  <main class="stage" id="stage">
+    <div class="chip" id="chip"></div>
+    <div class="portrait hero" id="p-hero"><img alt=""><span class="ph">🧑</span></div>
+    <div class="portrait shuri" id="p-shuri"><img alt=""><span class="ph">👩</span></div>
+  </main>
+  <section class="win dialog" id="dialog" aria-live="polite">
+    <span class="name n" id="name"></span>
+    <button type="button" class="prev" id="prev">◀ もどる</button>
+    <p id="text"></p>
+    <div class="choices hidden" id="choices"></div>
+    <span class="next" id="next">▼</span>
+  </section>
+  <section class="win items hidden" id="items">
+    <h2>✦ 持ち帰りアイテム ✦</h2>
+    <div id="itemlist"></div>
+    <button type="button" class="btn" id="restbtn">▶ 宿で休む</button>
+  </section>
+</div>
+<div class="lu hidden" id="lu">
+  <div class="zz" id="zz"><span class="z">Z</span><span class="z">z</span><span class="z">z</span>… ぐっすり…</div>
+  <div class="stage2" id="lu-stage">
+    <div class="glow"></div>
+    <div class="stars" id="stars"></div>
+    <div class="badge"><img id="lu-badge-img" alt=""></div>
+    <h2 id="lu-h">LEVEL UP!</h2>
+    <div class="lvline" id="lu-line">Lv.<span class="old" id="lu-old">1</span><span class="arrow">→</span><span class="new" id="lu-new">2</span></div>
+    <div class="rankline" id="lu-rank"></div>
+    <div class="learned"><small id="lu-learned-s">新しいスキルを覚えた！</small><b id="lu-skill"></b></div>
+    <div class="cleared" id="lu-clear"></div>
+    <div class="actions" id="lu-actions"></div>
+  </div>
+</div>
+<script id="ep-data" type="application/json">{"lines": [{"w": "n", "f": "", "t": "夜がふけた宿の暖炉の前で、冒険者さんが目をこすっている。"}, {"w": "s", "f": "", "t": "おかえり。今日も1日、本当にお疲れさま。"}, {"w": "h", "f": "", "t": "しゅりさん…動画を作りたいのに、時間がなくて…"}, {"w": "h", "f": "sad", "t": "寝かしつけたら私も寝ちゃうの…ダメなママだよね…"}, {"w": "s", "f": "", "t": "そんなことないよ。今日も育てて、暮らして、それだけで100点だよ。"}, {"w": "?", "f": "", "t": ""}, {"w": "s", "f": "", "t": "ひとつ伝えたいの。母親は、まとまった時間がほぼ取れないのが普通なの。"}, {"w": "h", "f": "", "t": "えっ、私だけじゃないんだ…！"}, {"w": "s", "f": "", "t": "だから「すきま時間の寄せ集め」。5分でネタメモ、10分で撮影、みたいにね。"}, {"w": "s", "f": "", "t": "もうひとつ。キャパオーバーのときは、頼れるものに頼っていいの。"}, {"w": "h", "f": "", "t": "頼る…って、たとえば？"}, {"w": "s", "f": "", "t": "パートさんとか、シッターさんとか、編集を手伝ってくれる人とか。"}, {"w": "s", "f": "", "t": "そして、いちばん大事なのは、食べて、寝ること。それが最強の投資だよ。"}, {"w": "h", "f": "happy", "t": "寝ていいんだ…！ 今日はもう寝て、明日5分だけ頑張る！"}, {"w": "s", "f": "smile", "t": "うん、それがいちばん。おやすみ、冒険者さん。"}], "items": [{"name": "すきま時間の寄せ集め", "desc": "5分でネタメモ、10分で撮影"}, {"name": "頼れるものに頼る", "desc": "パート・シッター・編集の手伝い"}, {"name": "食べて寝るのが最強", "desc": "それがいちばんの投資"}], "choice": [{"label": "うん、聞いてほしい…", "reply": []}, {"label": "ちょっとだけ泣いていい？", "reply": [{"w": "s", "f": "smile", "t": "いいよいいよ、おいで。……ぎゅー。はい、充電完了！"}]}]}</script>
+<script src="../js/data.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/episode.js"></script>
+</body>
+</html>

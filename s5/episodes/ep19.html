@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>続けられない。すぐサボっちゃう…｜宿屋しゅりの冒険者育成</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="ep" data-root="../" data-ep="ep19">
+<div class="ep-wrap">
+  <header class="ep-head">
+    <a class="back" href="../map.html#hearth">◀ マップ</a>
+    <span class="place" id="place"></span>
+    <div class="ep-bar"><i id="bar"></i></div>
+  </header>
+  <main class="stage" id="stage">
+    <div class="chip" id="chip"></div>
+    <div class="portrait hero" id="p-hero"><img alt=""><span class="ph">🧑</span></div>
+    <div class="portrait shuri" id="p-shuri"><img alt=""><span class="ph">👩</span></div>
+  </main>
+  <section class="win dialog" id="dialog" aria-live="polite">
+    <span class="name n" id="name"></span>
+    <button type="button" class="prev" id="prev">◀ もどる</button>
+    <p id="text"></p>
+    <div class="choices hidden" id="choices"></div>
+    <span class="next" id="next">▼</span>
+  </section>
+  <section class="win items hidden" id="items">
+    <h2>✦ 持ち帰りアイテム ✦</h2>
+    <div id="itemlist"></div>
+    <button type="button" class="btn" id="restbtn">▶ 宿で休む</button>
+  </section>
+</div>
+<div class="lu hidden" id="lu">
+  <div class="zz" id="zz"><span class="z">Z</span><span class="z">z</span><span class="z">z</span>… ぐっすり…</div>
+  <div class="stage2" id="lu-stage">
+    <div class="glow"></div>
+    <div class="stars" id="stars"></div>
+    <div class="badge"><img id="lu-badge-img" alt=""></div>
+    <h2 id="lu-h">LEVEL UP!</h2>
+    <div class="lvline" id="lu-line">Lv.<span class="old" id="lu-old">1</span><span class="arrow">→</span><span class="new" id="lu-new">2</span></div>
+    <div class="rankline" id="lu-rank"></div>
+    <div class="learned"><small id="lu-learned-s">新しいスキルを覚えた！</small><b id="lu-skill"></b></div>
+    <div class="cleared" id="lu-clear"></div>
+    <div class="actions" id="lu-actions"></div>
+  </div>
+</div>
+<script id="ep-data" type="application/json">{"lines": [{"w": "n", "f": "", "t": "宿の暖炉の前で、冒険者さんが毛布にくるまって丸くなっている。"}, {"w": "s", "f": "", "t": "おかえり。あれ、今日は冒険に出なかった？"}, {"w": "h", "f": "", "t": "うん…3日も投稿してなくて…。投稿しなきゃと思うほど、動けなくて…"}, {"w": "h", "f": "sad", "t": "意志が弱いよね、私…もうやめちゃおうかな…"}, {"w": "s", "f": "", "t": "うんうん、そういう日もあるよね。よく話してくれたね、ありがとう。"}, {"w": "?", "f": "", "t": ""}, {"w": "s", "f": "", "t": "大丈夫。「100点じゃなくていい」って決めよう。まず撮る、それだけで花丸。"}, {"w": "h", "f": "", "t": "花丸…！"}, {"w": "s", "f": "", "t": "お手本を真似するのも、立派な一歩。叩き台があると、ぐっとラクになるよ。"}, {"w": "s", "f": "", "t": "それと、習慣にしちゃうの。「朝のコーヒーのあとに撮る」みたいに、セットにして。"}, {"w": "h", "f": "", "t": "やる気がなくても、コーヒーが合図なら動けるかも…"}, {"w": "s", "f": "", "t": "止まっちゃう日は、過去投稿の冒頭を切って出し直してもいいの。休眠を避けられるよ。"}, {"w": "s", "f": "", "t": "細く長くでいいの。コツコツ、淡々とね。"}, {"w": "h", "f": "happy", "t": "100点じゃなくていい…！ なんだか毛布から出られそう！"}, {"w": "s", "f": "smile", "t": "ふふ、あったかいスープ、まだあるよ。飲んでから行こうか。"}], "items": [{"name": "100点じゃなくていい", "desc": "まず撮れたら花丸"}, {"name": "習慣にセットする", "desc": "「コーヒーのあとに撮る」"}, {"name": "過去投稿を出し直す", "desc": "冒頭を切って、休眠を避ける"}], "choice": [{"label": "うん、聞いてほしい…", "reply": []}, {"label": "ちょっとだけ泣いていい？", "reply": [{"w": "s", "f": "smile", "t": "いいよいいよ、おいで。……ぎゅー。はい、充電完了！"}]}]}</script>
+<script src="../js/data.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/episode.js"></script>
+</body>
+</html>
